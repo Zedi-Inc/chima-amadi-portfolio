@@ -1,15 +1,53 @@
 ---
-import BlogPostPreview from './BlogPostPreview.astro';
-
-const {posts} = Astro.props;
+// const {posts} = Astro.props;
+const posts = [
+  {
+    id: 1,
+    title: "News Update",
+    link: "https://blueprint.ng/dr-amadi-sanwo-olu-mbah-diri-others-bag-new-telegraph-award/",
+    excerpt: "Chima Amadi, Sanwo-Olu, Mbah, Diri, others bag New Telegraph Award Blueprint Newspapers",
+    imgSrc: "/assets/images/blog/blog-img-1.jpg",
+  },
+  {
+    id: 2,
+    title: "News Update",
+    link: "https://leadership.ng/imo-diaspora-hails-amadi-on-social-crusader-award/",
+    excerpt: "Imo Diaspora Hails Amadi on Social Crusader Award. Leadership Newspaper: ",
+    imgSrc: "/assets/images/blog/blog-img-1.jpg",
+  },
+  {
+    id: 3,
+    title: "News Update",
+    link: "https://www.vanguardngr.com/2023/11/2023-election-despite-challenges-inec-had-positive-outcomes-chima/",
+    excerpt: "2023 Election: Despite Challenges, INEC Had Positive Outcomes - Chima. Vanguard Newspaper:  ",
+    imgSrc: "/assets/images/blog/blog-img-1.jpg",
+  },
+  {
+    id: 4,
+    title: "News Update",
+    link: "https://www.vanguardngr.com/2023/11/editors-confab-politicians-pose-greatest-threat-to-nigerias-elections-activist/",
+    excerpt: "Editors' Confab: Politicians Pose Greatest Threat to Nigeria's Elections, Activist. Vanguard Newspaper: ",
+    imgSrc: "https://cdn.vanguardngr.com/wp-content/uploads/2023/11/Chima-Amadi-1.jpg",
+  },
+  ]
 ---
 
 <ul class="blog-posts-list__list">
-  {posts?.map((post) => {
-    return (
-      <BlogPostPreview post={post} />
-    )
-  })}
+  {
+    posts.map((post)=>{
+      return(
+    <li class="blog-post__preview">
+      <a href={post.link} target="_blank">
+        <span class="h-fit md:h-[350px] bg-slate-500/30 overflow-hidden flex w-full justify-center items-center backdrop-blur-md relative">
+          <img src={post.imgSrc} class="w-full h-full object-cover " alt="" />
+        </span>
+        <h3 class="text-sm font-medium">{post.title}</h3>
+         <p class="text-xs">{post.excerpt}</p>
+      </a>
+    </li>
+      )
+    })
+  }
 </ul>
 
 <style>
@@ -20,6 +58,22 @@ const {posts} = Astro.props;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+}
+.blog-post__preview span {
+  margin-bottom: 1rem;
+  border-radius: calc(var(--theme-shape-radius) /2);
+  transition: border-radius var(--theme-transition);
+}
+.blog-post__preview:hover span {
+  border-radius: var(--theme-shape-radius);
+}
+.blog-post__preview a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.blog-post__preview h3 {
+  margin: 0;
 }
 @media (max-width: 768px) {
   .blog-posts-list__list {
