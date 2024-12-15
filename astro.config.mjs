@@ -5,8 +5,12 @@ import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 import sanity from '@sanity/astro';
 import icon from 'astro-icon';
+import { loadEnv } from 'vite';
 
 import netlify from '@astrojs/netlify';
+
+const { PUBLIC_SANITY_STUDIO_PROJECT_ID, PUBLIC_SANITY_STUDIO_DATASET } =
+	loadEnv(process.env.NODE_ENV, process.cwd(), '');
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,10 +19,12 @@ export default defineConfig({
 
 	integrations: [
 		sanity({
-			projectId: 'zlb6sz0u',
-			dataset: 'production',
+			projectId: PUBLIC_SANITY_STUDIO_PROJECT_ID,
+			dataset: PUBLIC_SANITY_STUDIO_DATASET,
 			useCdn: false, // See note on using the CDN
-			apiVersion: '2024-07-24', // insert the current date to access the latest version of the API
+			apiVersion:
+				process.env.VITE_APP_SANITY_API_VERSION ||
+				new Date().toISOString().split('T')[0],
 			studioBasePath: '/admin',
 		}),
 		react(),
