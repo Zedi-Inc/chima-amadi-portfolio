@@ -2,7 +2,7 @@
 const {narrow} = Astro.props;
 ---
 
-<div class={`content__container ${narrow ? `content__container--narrow` : ``}`}>
+<div class={`content__container ${narrow ? `content__container--narrow` : ``} max-w-[1080px]`}>
   <slot></slot>
 </div>
 

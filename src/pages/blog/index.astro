@@ -7,6 +7,7 @@ import {
 } from '@components/odyssey-theme';
 import Layout from '../../layouts/Page.astro';
 import NewsletterForm from '../../components/forms/NewsletterForm.astro';
+import Heading from '@components/sections/heros/Heading.astro';
 
 const posts = await Astro.glob('./posts/*.mdx').then(posts =>
 	posts
@@ -34,18 +35,14 @@ const seo = {
 
 <Layout {seo}>
 	<Container>
-		<TextCardSection>
-			<h1>Odyssey Blog</h1>
-			<p>
-				View our blog to stay up to date on the latest news about our business.
-				Want to be the first to hear about a new blog post? Join our newsletter!
-			</p>
-			<NewsletterForm />
-		</TextCardSection>
-		<section class="blog-posts-list__section">
-			<h2>Recent Posts</h2>
-			<BlogPostsList posts={posts} />
-		</section>
+		<div class="pb-10 lg:px-6">
+			<section class="blog-posts-list__section px-4">
+				<Heading>
+					<h2 slot="headingText" class="text-lg md:text-2xl font-medium tracking-[1px]">Articles</h2>
+				</Heading>
+				<BlogPostsList posts={posts} />
+			</section>
+		</div>
 	</Container>
 </Layout>
 
