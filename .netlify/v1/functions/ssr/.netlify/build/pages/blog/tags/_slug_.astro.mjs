@@ -1,8 +1,8 @@
-import '../../../chunks/page-ssr_Dq7ZCpBh.mjs';
+import '../../../chunks/page-ssr_NmI0AUXy.mjs';
 import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, d as addAttribute } from '../../../chunks/astro/server_1-oyxUY5.mjs';
 import 'kleur/colors';
-import { $ as $$Page } from '../../../chunks/Page_yJE0Ldw0.mjs';
-import { $ as $$Container } from '../../../chunks/Logo_mlr6rG5n.mjs';
+import { $ as $$Page } from '../../../chunks/Page_CXPBlTx2.mjs';
+import { $ as $$Container } from '../../../chunks/Logo_BTijNAeU.mjs';
 import { g as generateTagData } from '../../../chunks/helpers_CRdKBoFS.mjs';
 /* empty css                                        */
 export { renderers } from '../../../renderers.mjs';
@@ -10,7 +10,7 @@ export { renderers } from '../../../renderers.mjs';
 const $$Astro = createAstro("https://odyssey-theme.sapling.supply/");
 const Astro = $$Astro;
 async function getStaticPaths() {
-  const allPosts = await Astro.glob(/* #__PURE__ */ Object.assign({"../posts/consider-hybrid-work.mdx": () => import('../../../chunks/consider-hybrid-work_BYsf6Twp.mjs').then(n => n._),"../posts/odyssey-theme-officially-released.mdx": () => import('../../../chunks/odyssey-theme-officially-released_32S9kc7U.mjs').then(n => n._),"../posts/remote-work-mental-health.mdx": () => import('../../../chunks/remote-work-mental-health_B2n1mGPb.mjs').then(n => n._)}), () => "../posts/*.mdx");
+  const allPosts = await Astro.glob(/* #__PURE__ */ Object.assign({"../posts/consider-hybrid-work.mdx": () => import('../../../chunks/consider-hybrid-work_lSjTkUfI.mjs').then(n => n._),"../posts/odyssey-theme-officially-released.mdx": () => import('../../../chunks/odyssey-theme-officially-released_BoR8TcNI.mjs').then(n => n._),"../posts/remote-work-mental-health.mdx": () => import('../../../chunks/remote-work-mental-health_Dhml1wub.mjs').then(n => n._)}), () => "../posts/*.mdx");
   const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
   const allCategoriesUnique = /* @__PURE__ */ new Set();
   sortedPosts.forEach((post) => {

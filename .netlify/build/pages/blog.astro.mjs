@@ -1,32 +1,20 @@
-import '../chunks/page-ssr_Dq7ZCpBh.mjs';
-import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_1-oyxUY5.mjs';
+import '../chunks/page-ssr_NmI0AUXy.mjs';
+import { a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_1-oyxUY5.mjs';
 import 'kleur/colors';
-import { parse, isBefore } from 'date-fns';
-import { $ as $$Container, c as $$BlogPostsList } from '../chunks/Logo_mlr6rG5n.mjs';
-import { $ as $$Page } from '../chunks/Page_yJE0Ldw0.mjs';
-import { $ as $$Heading } from '../chunks/Heading_BxSldCcy.mjs';
+import { $ as $$Container, d as $$BlogPostsList } from '../chunks/Logo_BTijNAeU.mjs';
+import { $ as $$Page } from '../chunks/Page_CXPBlTx2.mjs';
+import { b as articles, $ as $$Heading } from '../chunks/sanity-utils_Z0SMlS7f.mjs';
 /* empty css                                 */
 export { renderers } from '../renderers.mjs';
 
-const $$Astro = createAstro("https://odyssey-theme.sapling.supply/");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
-  Astro2.self = $$Index;
-  const posts = await Astro2.glob(/* #__PURE__ */ Object.assign({"./posts/consider-hybrid-work.mdx": () => import('../chunks/consider-hybrid-work_BYsf6Twp.mjs').then(n => n._),"./posts/odyssey-theme-officially-released.mdx": () => import('../chunks/odyssey-theme-officially-released_32S9kc7U.mjs').then(n => n._),"./posts/remote-work-mental-health.mdx": () => import('../chunks/remote-work-mental-health_B2n1mGPb.mjs').then(n => n._)}), () => "./posts/*.mdx").then(
-    (posts2) => posts2.map(({ frontmatter, url }) => ({
-      title: frontmatter.title,
-      description: frontmatter.description,
-      authors: frontmatter.authors,
-      publishDate: parse(frontmatter.publishDate, "MMMM d, yyyy", /* @__PURE__ */ new Date()),
-      featuredImage: frontmatter.featuredImage,
-      excerpt: frontmatter.excerpt,
-      href: url
-    })).sort((a, b) => {
-      if (isBefore(a.publishDate, b.publishDate)) return 1;
-      if (isBefore(b.publishDate, a.publishDate)) return -1;
-      return 0;
-    })
-  );
+  let articleContents = { data: [] };
+  try {
+    articleContents = await articles();
+  } catch (error) {
+    console.error("error", error);
+  }
+  const posts = articleContents?.data?.[0]?.articles ?? null;
   const seo = {
     title: "Dr. Chima Amadi | Articles",
     description: "Articles about Dr. Chima Amadi"

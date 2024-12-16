@@ -1,7 +1,7 @@
-import '../../chunks/page-ssr_Dq7ZCpBh.mjs';
+import '../../chunks/page-ssr_NmI0AUXy.mjs';
 import { a as createComponent, r as renderTemplate, m as maybeRenderHead, b as renderComponent, F as Fragment, c as createAstro } from '../../chunks/astro/server_1-oyxUY5.mjs';
 import 'kleur/colors';
-import { e as $$FormInput, i as $$Icon, b as $$Button, o as $$Logo, p as $$Base } from '../../chunks/Logo_mlr6rG5n.mjs';
+import { f as $$FormInput, j as $$Icon, b as $$Button, p as $$Logo, q as $$Base } from '../../chunks/Logo_BTijNAeU.mjs';
 /* empty css                                        */
 export { renderers } from '../../renderers.mjs';
 
