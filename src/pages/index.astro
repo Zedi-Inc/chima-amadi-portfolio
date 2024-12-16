@@ -9,8 +9,7 @@ import Layout from '../layouts/Page.astro';
 
 const seo = {
 	title: 'Dr. Chima Amadi',
-	description:
-		'Explore the life, education, and achievements of Dr. Chima Amadi, a renowned scholar, advocate for good governance, and entrepreneur.',
+	description: 'Dr. Chima Amadi is a renowned scholar, advocates for good governance, and entrepreneur.',
 };
 
 // const posts = await Astro.glob('./posts/*.mdx').then(posts =>
@@ -86,7 +85,7 @@ console.log(posts);
 			</picture>
 		</SectionTop>
 	</section>
-	<section class="pb-10 px-6 mt-8">
+	<section class="pb-10 px-4 lg:px-12 mt-8">
 		<Heading>
 			<h2
 				slot="headingText"
@@ -96,6 +95,14 @@ console.log(posts);
 			</h2>
 		</Heading>
 		<BlogPostsList />
+		<div class="mt-2">
+			<a
+				href="/blog"
+				class="text-red-800 font-semibold hover:underline hover:text-red-800/80"
+			>
+				[See more articles]
+			</a>
+		</div>
 	</section>
 	<!-- <Container>
 		<section class="feature-card__section">
