@@ -1,10 +1,6 @@
 ---
 import { parse, isBefore } from 'date-fns';
-import {
-	Container,
-	TextCardSection,
-	BlogPostsList,
-} from '@/components/odyssey-theme';
+import { Container, BlogPostsList } from '@/components/odyssey-theme';
 import Layout from '../../layouts/Page.astro';
 import Heading from '@/components/sections/heros/Heading.astro';
 
@@ -27,8 +23,8 @@ const posts = await Astro.glob('./posts/*.mdx').then(posts =>
 );
 
 const seo = {
-	title: 'Blog | Astro Odyssey Theme',
-	description: 'Astro Odyssey Theme Blog Page',
+	title: 'Dr. Chima Amadi | Articles',
+	description: 'Articles about Dr. Chima Amadi',
 };
 ---
 
