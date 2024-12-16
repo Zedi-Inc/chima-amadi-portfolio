@@ -1,11 +1,13 @@
+// // astro.config.mjs
 import { defineConfig } from 'astro/config';
-import sitemap from '@astrojs/sitemap';
-import mdx from '@astrojs/mdx';
-import icon from 'astro-icon';
-import lit from '@astrojs/lit';
+
+import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 import sanity from '@sanity/astro';
+import mdx from '@astrojs/mdx';
+import icon from 'astro-icon';
 import { loadEnv } from 'vite';
+
 import netlify from '@astrojs/netlify';
 
 const { PUBLIC_SANITY_STUDIO_PROJECT_ID, PUBLIC_SANITY_STUDIO_DATASET } =
@@ -13,26 +15,31 @@ const { PUBLIC_SANITY_STUDIO_PROJECT_ID, PUBLIC_SANITY_STUDIO_DATASET } =
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://odyssey-theme.sapling.supply/', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
-	sitemap: true, // Generate sitemap (set to "false" to disable)
+	site: 'https://odyssey-theme.sapling.supply/',
+	sitemap: true,
+
 	integrations: [
-		sitemap(),
-		mdx(),
-		lit(),
-		icon(),
-		tailwind(),
 		sanity({
-			projectId: 'zlb6sz0u',
-			dataset: 'production',
+			projectId: PUBLIC_SANITY_STUDIO_PROJECT_ID,
+			dataset: PUBLIC_SANITY_STUDIO_DATASET,
+			useCdn: false, // See note on using the CDN
+			apiVersion:
+				process.env.VITE_APP_SANITY_API_VERSION ||
+				new Date().toISOString().split('T')[0],
 			studioBasePath: '/admin',
-			useCdn: false,
 		}),
-	], // Add renderers to the config
+		react(),
+		tailwind(),
+		mdx(),
+		icon(),
+	],
+
 	vite: {
 		ssr: {
 			noExternal: ['react-icons'],
 		},
 	},
-	output: 'static',
+
+	output: 'server',
 	adapter: netlify(),
 });
