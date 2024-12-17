@@ -6,6 +6,7 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 import Layout from '../layouts/Page.astro';
 import type { Articles } from '@/sanity/sanity.types';
 import { articles } from '@/sanity/lib/sanity-utils';
+import AOSInit from '@/components/AOSInit.astro';
 
 const seo = {
 	title: 'Dr. Chima Amadi',
@@ -25,10 +26,11 @@ const posts = articleContents?.data?.[0]?.articles ?? null;
 ---
 
 <Layout {seo}>
+	<AOSInit />
 	<HomeHeroSection />
 	<section class="pb-10 lg:px-6">
 		<SectionTop>
-			<div slot="text-container">
+			<div slot="text-container" data-aos="fade-right">
 				<Heading>
 					<h2
 						slot="headingText"
@@ -37,7 +39,7 @@ const posts = articleContents?.data?.[0]?.articles ?? null;
 						About Dr. Chima Amadi
 					</h2>
 				</Heading>
-				<div class="text-xs md:text-sm">
+				<div class="text-xs md:text-sm" data-aos="fade-left">
 					<p>
 						Dr. Chima Matthew Amadi, also called "Mazi Gburugburu," is a
 						respected Nigerian scholar, researcher, advocate for good
@@ -63,7 +65,7 @@ const posts = articleContents?.data?.[0]?.articles ?? null;
 					</div>
 				</div>
 			</div>
-			<picture slot="image-container">
+			<picture slot="image-container" data-aos="fade-right">
 				<img
 					src="/assets/images/home/chima-amadi-2.webp"
 					alt="Dr. Chima Amadi's image"

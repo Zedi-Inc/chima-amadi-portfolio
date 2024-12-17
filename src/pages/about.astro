@@ -6,6 +6,7 @@ import SectionTop from '@/components/sections/heros/SectionTop.astro';
 import { about } from '@/sanity/lib/sanity-utils';
 import PortableText from '@/components/PortableText.astro';
 import type { About } from '@/sanity/sanity.types';
+import AOSInit from '@/components/AOSInit.astro';
 
 const seo = {
 	title: 'About | Dr. Chima Amadi',
@@ -27,6 +28,7 @@ const philanthropyActivities = aboutContent.data[0]?.activities?.[0] ?? null;
 ---
 
 <Layout {seo}>
+	<AOSInit />
 	<section class="pb-10 lg:px-10">
 		<SectionTop>
 			<div slot="text-container">
@@ -47,7 +49,7 @@ const philanthropyActivities = aboutContent.data[0]?.activities?.[0] ?? null;
 		{
 			mainContent?.length ? (
 				mainContent.splice(0, mainContent.length - 1).map(item => (
-					<div class="px-4 lg:px-10 mt-8">
+					<div class="px-4 lg:px-10 mt-8" data-aos="fade-up" data-aos-duration="1000">
 						<Heading>
 							<h2
 								slot="headingText"

@@ -4,25 +4,33 @@ import { Container } from '@/components/odyssey-theme';
 ---
 
 <Container>
-	<section class="hero-section__section flex flex-col-reverse md:flex-row justify-between gap-10 px-4 lg:px-12 mt-8">
-		<div class="hero-section__text">
-				<h1 class="text-[44px] text-red-800 font-semibold text-center md:text-right md:text-[50px] lg:text-5xl -tracking-[4px] whitespace-nowrap">Dr. Chima Amadi</h1>
-				<div class="flex justify-center md:justify-end">
-					<p class="text-xs md:text-sm lg:text-sm text-center md:text-right max-w-[80%]">
-						Executive Director of the Centre for Transparency Advocacy (CTA)
-					</p>
-				</div>
-				<Socials />
+	<section
+		class="hero-section__section flex flex-col-reverse md:flex-row justify-between gap-10 px-4 lg:px-12 mt-8"
+	>
+		<div class="hero-section__text" data-aos="fade-right">
+			<h1
+				class="text-[44px] text-red-800 font-semibold text-center md:text-right md:text-[50px] lg:text-5xl -tracking-[4px] whitespace-nowrap"
+			>
+				Dr. Chima Amadi
+			</h1>
+			<div class="flex justify-center md:justify-end">
+				<p
+					class="text-xs md:text-sm lg:text-sm text-center md:text-right max-w-[80%]"
+				>
+					Executive Director of the Centre for Transparency Advocacy (CTA)
+				</p>
+			</div>
+			<Socials />
 		</div>
-		<div class="hero-section__image">
-				<picture>
-					<img
-						src="/assets/images/home/mazi-15.webp"
-						alt="A picture Dr. Chima Amadi"
-						id="home-hero-image"
-						class="h-full"
-					/>
-				</picture>
+		<div class="hero-section__image" data-aos="fade-left">
+			<picture>
+				<img
+					src="/assets/images/home/mazi-15.webp"
+					alt="A picture Dr. Chima Amadi"
+					id="home-hero-image"
+					class="h-full"
+				/>
+			</picture>
 		</div>
 	</section>
 </Container>
