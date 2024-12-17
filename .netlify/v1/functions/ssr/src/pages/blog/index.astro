@@ -1,0 +1,47 @@
+---
+import { parse, isBefore } from 'date-fns';
+import { Container, BlogPostsList } from '@/components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+import Heading from '@/components/sections/heros/Heading.astro';
+import type { Articles } from '@/sanity/sanity.types';
+import { articles } from '@/sanity/lib/sanity-utils';
+
+let articleContents: { data: Articles[] } = { data: [] };
+
+try {
+	articleContents = await articles();
+} catch (error) {
+	console.error('error', error);
+}
+
+const posts = articleContents?.data?.[0]?.articles ?? null;
+
+const seo = {
+	title: 'Dr. Chima Amadi | Articles',
+	description: 'Articles about Dr. Chima Amadi',
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<div class="pb-10 lg:px-6">
+			<section class="blog-posts-list__section px-4">
+				<Heading>
+					<h2
+						slot="headingText"
+						class="text-lg md:text-2xl font-medium tracking-[1px]"
+					>
+						Articles
+					</h2>
+				</Heading>
+				<BlogPostsList posts={posts} />
+			</section>
+		</div>
+	</Container>
+</Layout>
+
+<style>
+	.blog-posts-list__section {
+		margin: var(--section-margin) auto;
+	}
+</style>
