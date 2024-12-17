@@ -13,7 +13,7 @@ const { posts = [] } = Astro.props as BlogPostsListProps;
 <ul class="blog-posts-list__list">
 	{
 		posts.map(post => (
-			<li class="blog-post__preview">
+			<li class="blog-post__preview" data-aos="fade-up">
 				<a href={post.link} target="_blank">
 					<span class="h-fit md:h-[350px] bg-slate-500/30 overflow-hidden flex w-full justify-center items-center backdrop-blur-md relative">
 						<PortableText portableText={post.image} />
