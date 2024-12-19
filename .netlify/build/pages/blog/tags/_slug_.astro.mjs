@@ -1,8 +1,8 @@
-import '../../../chunks/page-ssr_Dbep8LgX.mjs';
-import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, d as addAttribute } from '../../../chunks/astro/server_1-oyxUY5.mjs';
+import '../../../chunks/page-ssr_Bt5CqunH.mjs';
+import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, d as addAttribute } from '../../../chunks/astro/server_CZvC6DWo.mjs';
 import 'kleur/colors';
-import { $ as $$Page } from '../../../chunks/Page_Cfl4j5Iu.mjs';
-import { $ as $$Container } from '../../../chunks/Logo_CJFBAAmv.mjs';
+import { $ as $$Page } from '../../../chunks/Page_DTKAZ9RQ.mjs';
+import { $ as $$Container } from '../../../chunks/Logo_CQR-xznP.mjs';
 import { g as generateTagData } from '../../../chunks/helpers_CRdKBoFS.mjs';
 /* empty css                                        */
 export { renderers } from '../../../renderers.mjs';
@@ -10,7 +10,7 @@ export { renderers } from '../../../renderers.mjs';
 const $$Astro = createAstro("https://odyssey-theme.sapling.supply/");
 const Astro = $$Astro;
 async function getStaticPaths() {
-  const allPosts = await Astro.glob(/* #__PURE__ */ Object.assign({"../posts/consider-hybrid-work.mdx": () => import('../../../chunks/consider-hybrid-work_BuORW3OQ.mjs').then(n => n._),"../posts/odyssey-theme-officially-released.mdx": () => import('../../../chunks/odyssey-theme-officially-released_Dm8B2fsY.mjs').then(n => n._),"../posts/remote-work-mental-health.mdx": () => import('../../../chunks/remote-work-mental-health_DwDAzV0X.mjs').then(n => n._)}), () => "../posts/*.mdx");
+  const allPosts = await Astro.glob(/* #__PURE__ */ Object.assign({"../posts/consider-hybrid-work.mdx": () => import('../../../chunks/consider-hybrid-work_Dcvs89An.mjs').then(n => n._),"../posts/odyssey-theme-officially-released.mdx": () => import('../../../chunks/odyssey-theme-officially-released_A6onTbcI.mjs').then(n => n._),"../posts/remote-work-mental-health.mdx": () => import('../../../chunks/remote-work-mental-health_DqA49tjI.mjs').then(n => n._)}), () => "../posts/*.mdx");
   const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
   const allCategoriesUnique = /* @__PURE__ */ new Set();
   sortedPosts.forEach((post) => {
