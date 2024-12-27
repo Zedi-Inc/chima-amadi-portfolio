@@ -24,19 +24,19 @@ const seo = {
 
 <Layout {seo}>
 	<Container>
-		<div class="pb-10 lg:px-6">
-			<section class="blog-posts-list__section px-4">
-				<Heading>
-					<h2
-						slot="headingText"
-						class="text-lg md:text-2xl font-medium tracking-[1px]"
-					>
-						Articles
-					</h2>
-				</Heading>
-				<BlogPostsList posts={posts} />
+			<section class="pb-10 lg:px-6">
+				<div class="blog-posts-list__section px-4">
+					<Heading>
+						<h2
+							slot="headingText"
+							class="text-lg md:text-2xl font-medium tracking-[1px]"
+						>
+							Articles
+						</h2>
+					</Heading>
+					<BlogPostsList posts={posts} />
+				</div>
 			</section>
-		</div>
 	</Container>
 </Layout>
 

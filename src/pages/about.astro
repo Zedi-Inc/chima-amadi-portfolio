@@ -40,7 +40,7 @@ const philanthropyActivities = aboutContent.data[0]?.activities?.[0] ?? null;
 						{heroContent?.name}
 					</h2>
 				</Heading>
-				<div class="text-xs md:text-sm xl:text-base">
+				<div class="text-sm md:text-base xl:text-base">
 					<PortableText portableText={heroContent?.description} />
 				</div>
 			</div>
@@ -58,7 +58,7 @@ const philanthropyActivities = aboutContent.data[0]?.activities?.[0] ?? null;
 								{item?.name || 'Default Name'}
 							</h2>
 						</Heading>
-						<div class="text-xs md:text-sm xl:text-base">
+						<div class="text-sm md:text-base">
 							{item?.description?.map((desc, index) => (
 								<PortableText key={index} portableText={desc} />
 							))}
@@ -84,7 +84,7 @@ const philanthropyActivities = aboutContent.data[0]?.activities?.[0] ?? null;
 								{philanthropyActivities?.name}
 							</h2>
 						</Heading>
-						<div class="text-xs md:text-sm xl:text-base">
+						<div class="text-sm md:text-base">
 							<p>
 								{philanthropyActivities?.description}
 							</p>
@@ -109,7 +109,7 @@ const philanthropyActivities = aboutContent.data[0]?.activities?.[0] ?? null;
 										{item?.name || 'Default Name'}
 									</h2>
 								</Heading>
-								<div class="text-xs md:text-sm xl:text-base">
+								<div class="text-sm md:text-base">
 									{item?.description?.map((desc, index) => (
 										<PortableText key={index} portableText={desc} />
 									))}
