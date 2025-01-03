@@ -1,6 +1,6 @@
 import React, { createElement } from 'react';
 import ReactDOM from 'react-dom/server';
-import { A as AstroJSX, i as renderJSX, j as createVNode, k as AstroUserError } from './chunks/astro/server_CZvC6DWo.mjs';
+import { A as AstroJSX, i as renderJSX, j as createVNode, k as AstroUserError } from './chunks/astro/server_BSuU5-Gf.mjs';
 import 'kleur/colors';
 import 'clsx';
 
@@ -307,6 +307,6 @@ const renderer = {
 };
 var server_default = renderer;
 
-const renderers = [Object.assign({"name":"@astrojs/react","clientEntrypoint":"@astrojs/react/client.js","serverEntrypoint":"@astrojs/react/server.js"}, { ssr: _renderer0 }),Object.assign({"name":"astro:jsx","serverEntrypoint":"file:///C:/Users/Kingsley%20Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/node_modules/@astrojs/mdx/dist/server.js"}, { ssr: server_default }),];
+const renderers = [Object.assign({"name":"@astrojs/react","clientEntrypoint":"@astrojs/react/client.js","serverEntrypoint":"@astrojs/react/server.js"}, { ssr: _renderer0 }),Object.assign({"name":"astro:jsx","serverEntrypoint":"file:///C:/Users/Kingsley%20Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/node_modules/@astrojs/mdx/dist/server.js"}, { ssr: server_default }),];
 
 export { renderers };

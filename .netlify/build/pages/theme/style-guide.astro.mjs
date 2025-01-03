@@ -1,8 +1,8 @@
-import '../../chunks/page-ssr_BSouY8rh.mjs';
-import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, F as Fragment } from '../../chunks/astro/server_CZvC6DWo.mjs';
+import '../../chunks/page-ssr_CkBzZ5BF.mjs';
+import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, F as Fragment } from '../../chunks/astro/server_BSuU5-Gf.mjs';
 import 'kleur/colors';
-import { $ as $$Container, a as $$TextCardSection, b as $$Button, j as $$Icon, f as $$FormInput, g as $$FormSelect, h as $$FormTextarea } from '../../chunks/Logo_t5A6Jcft.mjs';
-import { $ as $$Page } from '../../chunks/Page_Jpozj1tt.mjs';
+import { $ as $$Container, a as $$TextCardSection, b as $$Button, j as $$Icon, f as $$FormInput, g as $$FormSelect, h as $$FormTextarea } from '../../chunks/Logo_DQiqqeyw.mjs';
+import { $ as $$Page } from '../../chunks/Page_Cev97whe.mjs';
 /* empty css                                          */
 export { renderers } from '../../renderers.mjs';
 
@@ -26,9 +26,9 @@ This is the style guide for the <a href="https://github.com/treefarmstudio/odyss
           something.” — Ashton Kutcher
 </blockquote> </div> </section> <section class="style-guide__section" data-astro-cid-zlic2tnn> <div class="style-guide__title-container" data-astro-cid-zlic2tnn> <h2 data-astro-cid-zlic2tnn>Buttons</h2> </div> <div data-astro-cid-zlic2tnn> <p data-astro-cid-zlic2tnn>Button</p> <p data-astro-cid-zlic2tnn> ${renderComponent($$result3, "Button", $$Button, { "data-astro-cid-zlic2tnn": true }, { "default": ($$result4) => renderTemplate`Button 1` })} </p> <p data-astro-cid-zlic2tnn>Unelevated Button</p> <p data-astro-cid-zlic2tnn> ${renderComponent($$result3, "Button", $$Button, { "unelevated": true, "data-astro-cid-zlic2tnn": true }, { "default": ($$result4) => renderTemplate`Button 2` })} </p> <p data-astro-cid-zlic2tnn>Outlined Button</p> <p data-astro-cid-zlic2tnn> ${renderComponent($$result3, "Button", $$Button, { "outlined": true, "data-astro-cid-zlic2tnn": true }, { "default": ($$result4) => renderTemplate`Button 3` })} </p> <p data-astro-cid-zlic2tnn>Button With Custom Icon</p> ${renderComponent($$result3, "Button", $$Button, { "customIcon": true, "data-astro-cid-zlic2tnn": true }, { "default": ($$result4) => renderTemplate`Launch Page
  `, "icon": ($$result4) => renderTemplate`${renderComponent($$result4, "Fragment", Fragment, { "slot": "icon" }, { "default": ($$result5) => renderTemplate` ${renderComponent($$result5, "Icon", $$Icon, { "name": "ic:baseline-launch", "data-astro-cid-zlic2tnn": true })} ` })}` })} </div> </section> <section class="style-guide__section" data-astro-cid-zlic2tnn> <div class="style-guide__title-container" data-astro-cid-zlic2tnn> <h2 data-astro-cid-zlic2tnn>Forms</h2> </div> <div class="style-guide-forms__container" data-astro-cid-zlic2tnn> <div data-astro-cid-zlic2tnn> <h3 data-astro-cid-zlic2tnn>Input With Label</h3> ${renderComponent($$result3, "FormInput", $$FormInput, { "type": "text", "label": "Name", "name": "Name", "placeholder": "John Doe", "data-astro-cid-zlic2tnn": true })} </div> <div data-astro-cid-zlic2tnn> <h3 data-astro-cid-zlic2tnn>Input Without Label</h3> ${renderComponent($$result3, "FormInput", $$FormInput, { "type": "text", "name": "Name", "placeholder": "John Doe", "data-astro-cid-zlic2tnn": true })} </div> <div data-astro-cid-zlic2tnn> <h3 data-astro-cid-zlic2tnn>Select Dropdown</h3> ${renderComponent($$result3, "FormSelect", $$FormSelect, { "options": selectOptions, "data-astro-cid-zlic2tnn": true })} </div> <div data-astro-cid-zlic2tnn> <h3 data-astro-cid-zlic2tnn>Textarea</h3> ${renderComponent($$result3, "FormTextarea", $$FormTextarea, { "name": "Message", "placeholder": "Your message here...", "data-astro-cid-zlic2tnn": true })} </div> </div> </section> ` })} ` })} `;
-}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/theme/style-guide.astro", void 0);
+}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/theme/style-guide.astro", void 0);
 
-const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/theme/style-guide.astro";
+const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/theme/style-guide.astro";
 const $$url = "/theme/style-guide";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

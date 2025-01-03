@@ -1,8 +1,8 @@
-import '../../chunks/page-ssr_BSouY8rh.mjs';
-import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead } from '../../chunks/astro/server_CZvC6DWo.mjs';
+import '../../chunks/page-ssr_CkBzZ5BF.mjs';
+import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead } from '../../chunks/astro/server_BSuU5-Gf.mjs';
 import 'kleur/colors';
-import { e as $$TextSection } from '../../chunks/Logo_t5A6Jcft.mjs';
-import { $ as $$Page } from '../../chunks/Page_Jpozj1tt.mjs';
+import { e as $$TextSection } from '../../chunks/Logo_DQiqqeyw.mjs';
+import { $ as $$Page } from '../../chunks/Page_Cev97whe.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Astro = createAstro("https://odyssey-theme.sapling.supply/");
@@ -50,9 +50,9 @@ Consequuntur similique ab ea tenetur, quo aperiam molestias sed facilis
       reiciendis voluptates corporis eum repellat maiores fugit, eveniet
       sapiente ad.
 </p> ` })} ` })}`;
-}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/company/legal.astro", void 0);
+}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/company/legal.astro", void 0);
 
-const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/company/legal.astro";
+const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/company/legal.astro";
 const $$url = "/company/legal";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

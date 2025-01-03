@@ -28,7 +28,7 @@ const posts = articleContents?.data?.[0]?.articles ?? null;
 <Layout {seo}>
 	<AOSInit />
 	<HomeHeroSection />
-	<section class="pb-10 lg:px-6 min-w-[1080px]">
+	<section class="pb-10 lg:px-6 w-full mx-auto">
 		<SectionTop>
 			<div slot="text-container" data-aos="fade-right">
 				<Heading>
@@ -74,7 +74,7 @@ const posts = articleContents?.data?.[0]?.articles ?? null;
 			</picture>
 		</SectionTop>
 	</section>
-	<section class="pb-10 px-4 lg:px-12 mt-8">
+	<section class="pb-10 px-4 lg:px-12 mt-8 max-w-[1280px] mx-auto">
 		<Heading>
 			<h2
 				slot="headingText"

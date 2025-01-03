@@ -1,4 +1,4 @@
-import { _ as _page } from '../../../chunks/remote-work-mental-health_poqje_i6.mjs';
+import { _ as _page } from '../../../chunks/remote-work-mental-health_Dcnr0ZnI.mjs';
 export { renderers } from '../../../renderers.mjs';
 
 const page = () => _page;

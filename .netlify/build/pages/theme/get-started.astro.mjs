@@ -1,8 +1,8 @@
-import '../../chunks/page-ssr_BSouY8rh.mjs';
-import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, F as Fragment } from '../../chunks/astro/server_CZvC6DWo.mjs';
+import '../../chunks/page-ssr_CkBzZ5BF.mjs';
+import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, F as Fragment } from '../../chunks/astro/server_BSuU5-Gf.mjs';
 import 'kleur/colors';
-import { $ as $$Container, a as $$TextCardSection, b as $$Button, j as $$Icon } from '../../chunks/Logo_t5A6Jcft.mjs';
-import { $ as $$Page } from '../../chunks/Page_Jpozj1tt.mjs';
+import { $ as $$Container, a as $$TextCardSection, b as $$Button, j as $$Icon } from '../../chunks/Logo_DQiqqeyw.mjs';
+import { $ as $$Page } from '../../chunks/Page_Cev97whe.mjs';
 /* empty css                                          */
 export { renderers } from '../../renderers.mjs';
 
@@ -21,9 +21,9 @@ Theme Setup
  `, "icon": ($$result5) => renderTemplate`${renderComponent($$result5, "Fragment", Fragment, { "slot": "icon" }, { "default": ($$result6) => renderTemplate` ${renderComponent($$result6, "Icon", $$Icon, { "name": "ic:baseline-chevron-right", "data-astro-cid-mz6karmx": true })} ` })}` })} ${renderComponent($$result4, "Button", $$Button, { "href": "/theme/customizing-odyssey", "customIcon": true, "data-astro-cid-mz6karmx": true }, { "default": ($$result5) => renderTemplate`
 Customizing Odyssey
  `, "icon": ($$result5) => renderTemplate`${renderComponent($$result5, "Fragment", Fragment, { "slot": "icon" }, { "default": ($$result6) => renderTemplate` ${renderComponent($$result6, "Icon", $$Icon, { "name": "ic:baseline-chevron-right", "data-astro-cid-mz6karmx": true })} ` })}` })} </div> ` })} ` })} ` })} `;
-}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/theme/get-started.astro", void 0);
+}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/theme/get-started.astro", void 0);
 
-const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/theme/get-started.astro";
+const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/theme/get-started.astro";
 const $$url = "/theme/get-started";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

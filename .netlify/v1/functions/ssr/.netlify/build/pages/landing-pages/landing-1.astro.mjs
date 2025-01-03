@@ -1,9 +1,9 @@
-import '../../chunks/page-ssr_BSouY8rh.mjs';
-import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, d as addAttribute, f as renderSlot, F as Fragment } from '../../chunks/astro/server_CZvC6DWo.mjs';
+import '../../chunks/page-ssr_CkBzZ5BF.mjs';
+import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, d as addAttribute, g as renderSlot, F as Fragment } from '../../chunks/astro/server_BSuU5-Gf.mjs';
 import 'kleur/colors';
-import { $ as $$Container, i as $$AnnouncementBar, b as $$Button, j as $$Icon, k as $$CustomerQuoteSection, l as $$ThreeColumnTextSection, m as $$YouTubeEmbedSection, n as $$StickyTextImageSection, o as $$CtaCardSection } from '../../chunks/Logo_t5A6Jcft.mjs';
+import { $ as $$Container, i as $$AnnouncementBar, b as $$Button, j as $$Icon, k as $$CustomerQuoteSection, l as $$ThreeColumnTextSection, m as $$YouTubeEmbedSection, n as $$StickyTextImageSection, o as $$CtaCardSection } from '../../chunks/Logo_DQiqqeyw.mjs';
 /* empty css                                        */
-import { $ as $$Page } from '../../chunks/Page_Jpozj1tt.mjs';
+import { $ as $$Page } from '../../chunks/Page_Cev97whe.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Astro$1 = createAstro("https://odyssey-theme.sapling.supply/");
@@ -12,7 +12,7 @@ const $$TextAndImageHero = createComponent(($$result, $$props, $$slots) => {
   Astro2.self = $$TextAndImageHero;
   const { reversed } = Astro2.props;
   return renderTemplate`${renderComponent($$result, "Container", $$Container, { "data-astro-cid-k22oaszl": true }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section${addAttribute(`text-and-image__section ${reversed && `text-and-image__section--reversed`}`, "class")} data-astro-cid-k22oaszl> <div class="text-and-image__text" data-astro-cid-k22oaszl> ${renderSlot($$result2, $$slots["text-container"])} <div class="text-and-image__btns" data-astro-cid-k22oaszl> ${renderSlot($$result2, $$slots["btns-container"])} </div> </div> <div class="text-and-image__image" data-astro-cid-k22oaszl> ${renderSlot($$result2, $$slots["image-container"])} </div> </section> ` })} `;
-}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/components/sections/heros/TextAndImageHero.astro", void 0);
+}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/components/sections/heros/TextAndImageHero.astro", void 0);
 
 const $$Astro = createAstro("https://odyssey-theme.sapling.supply/");
 const $$Landing1 = createComponent(($$result, $$props, $$slots) => {
@@ -56,9 +56,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
 It only takes a couple clicks to have a new, modern website for your
       business or startup.
 </p> ${renderComponent($$result3, "Button", $$Button, { "href": "/theme/get-started", "customIcon": true }, { "default": ($$result4) => renderTemplate`Get Started `, "icon": ($$result4) => renderTemplate`${renderComponent($$result4, "Fragment", Fragment, { "slot": "icon" }, { "default": ($$result5) => renderTemplate` ${renderComponent($$result5, "Icon", $$Icon, { "name": "ic:baseline-chevron-right" })} ` })}` })} ` })} ` })}`;
-}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/landing-pages/landing-1.astro", void 0);
+}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/landing-pages/landing-1.astro", void 0);
 
-const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/landing-pages/landing-1.astro";
+const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/landing-pages/landing-1.astro";
 const $$url = "/landing-pages/landing-1";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

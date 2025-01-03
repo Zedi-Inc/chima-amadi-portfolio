@@ -1,9 +1,9 @@
-import '../../chunks/page-ssr_BSouY8rh.mjs';
-import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead } from '../../chunks/astro/server_CZvC6DWo.mjs';
+import '../../chunks/page-ssr_CkBzZ5BF.mjs';
+import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead } from '../../chunks/astro/server_BSuU5-Gf.mjs';
 import 'kleur/colors';
-import { e as $$TextSection } from '../../chunks/Logo_t5A6Jcft.mjs';
-import { $ as $$SectionTop } from '../../chunks/SectionTop_Bo5Y12MB.mjs';
-import { $ as $$Page } from '../../chunks/Page_Jpozj1tt.mjs';
+import { e as $$TextSection } from '../../chunks/Logo_DQiqqeyw.mjs';
+import { $ as $$SectionTop } from '../../chunks/SectionTop_CRd_OJSx.mjs';
+import { $ as $$Page } from '../../chunks/Page_Cev97whe.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Astro = createAstro("https://odyssey-theme.sapling.supply/");
@@ -52,9 +52,9 @@ Quis distinctio tempora sequi sit repudiandae cumque nostrum deserunt,
       distinctio adipisci quas hic quae facilis? Sequi eum hic aperiam impedit
       minus?
 </p> ` })} ` })}`;
-}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/company/about.astro", void 0);
+}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/company/about.astro", void 0);
 
-const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/company/about.astro";
+const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/company/about.astro";
 const $$url = "/company/about";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

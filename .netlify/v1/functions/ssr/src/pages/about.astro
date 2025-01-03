@@ -49,7 +49,11 @@ const philanthropyActivities = aboutContent.data[0]?.activities?.[0] ?? null;
 		{
 			mainContent?.length ? (
 				mainContent.splice(0, mainContent.length - 1).map(item => (
-					<div class="px-4 lg:px-10 mt-8" data-aos="fade-up" data-aos-duration="1000">
+					<div
+						class="px-4 lg:px-10 mt-8"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
 						<Heading>
 							<h2
 								slot="headingText"

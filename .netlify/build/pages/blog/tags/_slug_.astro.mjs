@@ -1,8 +1,8 @@
-import '../../../chunks/page-ssr_BSouY8rh.mjs';
-import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, d as addAttribute } from '../../../chunks/astro/server_CZvC6DWo.mjs';
+import '../../../chunks/page-ssr_CkBzZ5BF.mjs';
+import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, d as addAttribute } from '../../../chunks/astro/server_BSuU5-Gf.mjs';
 import 'kleur/colors';
-import { $ as $$Page } from '../../../chunks/Page_Jpozj1tt.mjs';
-import { $ as $$Container } from '../../../chunks/Logo_t5A6Jcft.mjs';
+import { $ as $$Page } from '../../../chunks/Page_Cev97whe.mjs';
+import { $ as $$Container } from '../../../chunks/Logo_DQiqqeyw.mjs';
 import { g as generateTagData } from '../../../chunks/helpers_CRdKBoFS.mjs';
 /* empty css                                        */
 export { renderers } from '../../../renderers.mjs';
@@ -10,7 +10,7 @@ export { renderers } from '../../../renderers.mjs';
 const $$Astro = createAstro("https://odyssey-theme.sapling.supply/");
 const Astro = $$Astro;
 async function getStaticPaths() {
-  const allPosts = await Astro.glob(/* #__PURE__ */ Object.assign({"../posts/consider-hybrid-work.mdx": () => import('../../../chunks/consider-hybrid-work_CroGU9S0.mjs').then(n => n._),"../posts/odyssey-theme-officially-released.mdx": () => import('../../../chunks/odyssey-theme-officially-released_B5NdSuid.mjs').then(n => n._),"../posts/remote-work-mental-health.mdx": () => import('../../../chunks/remote-work-mental-health_poqje_i6.mjs').then(n => n._)}), () => "../posts/*.mdx");
+  const allPosts = await Astro.glob(/* #__PURE__ */ Object.assign({"../posts/consider-hybrid-work.mdx": () => import('../../../chunks/consider-hybrid-work_BNYAN4tG.mjs').then(n => n._),"../posts/odyssey-theme-officially-released.mdx": () => import('../../../chunks/odyssey-theme-officially-released_B1Sh9kZi.mjs').then(n => n._),"../posts/remote-work-mental-health.mdx": () => import('../../../chunks/remote-work-mental-health_Dcnr0ZnI.mjs').then(n => n._)}), () => "../posts/*.mdx");
   const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
   const allCategoriesUnique = /* @__PURE__ */ new Set();
   sortedPosts.forEach((post) => {
@@ -38,9 +38,9 @@ const $$slug = createComponent(async ($$result, $$props, $$slots) => {
     title: `${tag} | Astro Odyssey`
   };
   return renderTemplate`${renderComponent($$result, "Layout", $$Page, { "seo": seo, "data-astro-cid-5igcag46": true }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Container", $$Container, { "narrow": true, "data-astro-cid-5igcag46": true }, { "default": ($$result3) => renderTemplate` ${maybeRenderHead()}<section class="tag-page__section" data-astro-cid-5igcag46> <h1 data-astro-cid-5igcag46>Posts Tagged with "${tag}"</h1> <ul data-astro-cid-5igcag46> ${posts.map((post) => renderTemplate`<li data-astro-cid-5igcag46><a${addAttribute(post.url, "href")} data-astro-cid-5igcag46>${post.frontmatter.title}</a></li>`)} </ul> </section> ` })} ` })} `;
-}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/blog/tags/[slug].astro", void 0);
+}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/blog/tags/[slug].astro", void 0);
 
-const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/blog/tags/[slug].astro";
+const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/blog/tags/[slug].astro";
 const $$url = "/blog/tags/[slug]";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
