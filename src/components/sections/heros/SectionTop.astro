@@ -3,13 +3,16 @@ import { Container } from '@/components/odyssey-theme';
 ---
 
 <Container>
-	<div class="hero-section__section mt-10 flex flex-col md:flex-row-reverse items-center justify-between px-4 lg:px-8">
-		<div class="hero-section__text">
-			<slot name="text-container"></slot>
-		</div>
-		<div class="hero-section__image">
-			<slot name="image-container">
-			</slot>
+	<div class="w-full mx-auto flex justify-center max-w-[1280px]">
+		<div
+			class="hero-section__section mt-10 flex flex-col md:flex-row-reverse items-center gap-[120px] px-4 lg:px-8"
+		>
+			<div class="hero-section__text">
+				<slot name="text-container" />
+			</div>
+			<div class="hero-section__image">
+				<slot name="image-container" />
+			</div>
 		</div>
 	</div>
 </Container>
@@ -18,7 +21,6 @@ import { Container } from '@/components/odyssey-theme';
 	.hero-section__section {
 		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
 		align-items: center;
-		gap: 1rem;
 	}
 	.hero-section__text {
 		justify-self: center;

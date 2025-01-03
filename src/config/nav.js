@@ -11,4 +11,8 @@ export const nav = [
 		title: 'Gallery',
 		slug: '/gallery',
 	},
+	{
+		title: 'Wiki',
+		slug: '/wiki',
+	},
 ];
