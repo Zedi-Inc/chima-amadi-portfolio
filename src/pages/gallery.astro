@@ -1,0 +1,193 @@
+---
+import Layout from '../layouts/Page.astro';
+import type { Articles } from '@/sanity/sanity.types';
+import { articles } from '@/sanity/lib/sanity-utils';
+import AOSInit from '@/components/AOSInit.astro';
+
+const seo = {
+	title: 'Dr. Chima Amadi | Pictures gallery',
+	description:
+		'Dr. Chima Amadi is a renowned scholar, advocates for good governance, and entrepreneur.',
+};
+
+let articleContents: { data: Articles[] } = { data: [] };
+
+try {
+	articleContents = await articles();
+} catch (error) {
+	console.error('error', error);
+}
+
+const posts = articleContents?.data?.[0]?.articles ?? null;
+---
+
+<Layout {seo}>
+	<AOSInit />
+	<section class="py-24 relative">
+		<div class="mx-auto max-w-7xl px-4 sm:px-5 lg:px-6">
+			<div class="mb-16">
+				<h2
+					class="w-full text-center text-gray-900 text-4xl font-bold font-manrope leading-normal pb-2.5"
+				>
+					Gallery
+				</h2>
+				<p
+					class="w-full text-center text-gray-600 text-lg font-normal leading-8"
+				>
+					Explore the essence of beauty in our gallery's intimate space.
+				</p>
+			</div>
+		</div>
+		<section class="gallery-section py-12">
+			<div
+				id="gallery-grid"
+				class="gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+			>
+				{
+					[...Array(12)].map((_, index) => (
+						<div class={`gallery-item ${index >= 9 ? 'hidden' : ''}`}>
+							<img
+								src="https://pagedone.io/asset/uploads/1713943683.png"
+								alt={`Gallery image ${index + 1}`}
+								class="gallery-image w-full h-full object-cover transition-all duration-300 hover:opacity-90 hover:scale-[1.02]"
+							/>
+						</div>
+					))
+				}
+			</div>
+			<div class="flex justify-center mt-8">
+				<button
+					id="view-more-btn"
+					class="text-red-800 font-semibold hover:underline hover:text-red-800/80"
+				>
+					[See more images]
+				</button>
+			</div>
+
+			<!-- Lightbox -->
+			<div id="lightbox" class="lightbox items-center justify-center">
+				<span id="close" class="close">&times;</span>
+				<img
+					id="lightbox-image"
+					class="lightbox-image"
+					src=""
+					alt="Lightbox image"
+				/>
+			</div>
+		</section>
+	</section>
+</Layout>
+
+<style>
+	.lightbox {
+		display: none;
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	.lightbox-image {
+		display: block;
+		margin: auto;
+		max-width: 90%;
+		max-height: 90vh;
+	}
+	.close {
+		color: #fff;
+		font-size: 3em;
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		cursor: pointer;
+	}
+	.gallery {
+		width: 90vw;
+		max-width: 1200px;
+		margin: 0 auto;
+		grid-template-rows: 1fr;
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+	}
+	.gallery img {
+		max-width: 100%;
+		cursor: pointer;
+	}
+	.animate-fade-in {
+		animation: fadeIn 0.5s ease-in forwards;
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.hidden {
+		display: none;
+	}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		// Lightbox functionality
+		const gallery = document.querySelector('.gallery');
+		const lightbox = document.getElementById('lightbox');
+		const lightboxImage = document.getElementById('lightbox-image');
+		const closeButton = document.getElementById('close');
+		const viewMoreBtn = document.getElementById('view-more-btn');
+		const hiddenItems = document.querySelectorAll('.gallery-item.hidden');
+
+		// Gallery click handler
+		if (gallery) {
+			gallery.addEventListener('click', e => {
+				const target = e.target as HTMLElement;
+				if (target && target.classList.contains('gallery-image')) {
+					const imageSrc = (target as HTMLImageElement).src;
+					if (lightboxImage) {
+						(lightboxImage as HTMLImageElement).src = imageSrc;
+					}
+					if (lightbox) {
+						lightbox.style.display = 'flex';
+					}
+				}
+			});
+		}
+
+		// Close lightbox handlers
+		if (closeButton) {
+			closeButton.addEventListener('click', () => {
+				if (lightbox) {
+					lightbox.style.display = 'none';
+				}
+			});
+		}
+
+		if (lightbox) {
+			lightbox.addEventListener('click', e => {
+				if (e.target === lightbox) {
+					lightbox.style.display = 'none';
+				}
+			});
+		}
+
+		// View More functionality
+		if (viewMoreBtn) {
+			viewMoreBtn.addEventListener('click', () => {
+				hiddenItems.forEach(item => {
+					item.classList.remove('hidden');
+					item.classList.add('animate-fade-in');
+				});
+				viewMoreBtn.style.display = 'none';
+			});
+		}
+	});
+</script>
