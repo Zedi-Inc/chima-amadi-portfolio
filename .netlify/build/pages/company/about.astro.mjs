@@ -1,9 +1,9 @@
-import '../../chunks/page-ssr_C1XCyQoh.mjs';
+import '../../chunks/page-ssr_DZE3iadG.mjs';
 import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead } from '../../chunks/astro/server_BSuU5-Gf.mjs';
 import 'kleur/colors';
-import { e as $$TextSection } from '../../chunks/Logo_BGCn34SM.mjs';
-import { $ as $$SectionTop } from '../../chunks/SectionTop_CttBlvbC.mjs';
-import { $ as $$Page } from '../../chunks/Page_CSlaaEtl.mjs';
+import { e as $$TextSection } from '../../chunks/Logo_ChHdVA5R.mjs';
+import { $ as $$SectionTop } from '../../chunks/SectionTop_DvnOOMAw.mjs';
+import { $ as $$Page } from '../../chunks/Page_Qbsc1MVm.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Astro = createAstro("https://odyssey-theme.sapling.supply/");

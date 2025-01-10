@@ -52,12 +52,10 @@ const gallery = galleryContents ?? null;
 							data-aos="fade-up"
 							data-aos-delay={index * 100}
 						>
-							<div
-								class="image-wrapper relative h-full w-full overflow-hidden group cursor-pointer"
-								data-aos="fade-up"
-							>
+							<div class="image-wrapper relative h-full w-full overflow-hidden group cursor-pointer">
 								<PortableText
 									portableText={item?.image}
+									style="max-height: 100%; max-width: 100%; border: 1px solid red; aspect-ratio: 3/2;"
 									class="gallery-image !block w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
 									imageOpts={{
 										alt:
@@ -125,6 +123,7 @@ const gallery = galleryContents ?? null;
 
 	.image-wrapper :global(img) {
 		@apply w-full h-full object-cover transition-all duration-300;
+		aspect-ratio: 3/2;
 	}
 
 	.animate-fade-in {

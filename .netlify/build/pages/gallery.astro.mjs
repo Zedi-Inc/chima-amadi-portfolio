@@ -1,10 +1,10 @@
-import '../chunks/page-ssr_C1XCyQoh.mjs';
+import '../chunks/page-ssr_DZE3iadG.mjs';
 import { a as createComponent, r as renderTemplate, b as renderComponent, f as renderScript, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_BSuU5-Gf.mjs';
 import 'kleur/colors';
-import { $ as $$Page } from '../chunks/Page_CSlaaEtl.mjs';
-import { g as gallery } from '../chunks/sanity-utils_BGePeoMV.mjs';
+import { $ as $$Page } from '../chunks/Page_Qbsc1MVm.mjs';
+import { g as gallery } from '../chunks/sanity-utils_BlpeoTAm.mjs';
 import { $ as $$AOSInit } from '../chunks/AOSInit_BGForVi3.mjs';
-import { c as $$PortableText } from '../chunks/Logo_BGCn34SM.mjs';
+import { c as $$PortableText } from '../chunks/Logo_ChHdVA5R.mjs';
 /* empty css                                   */
 export { renderers } from '../renderers.mjs';
 
@@ -25,7 +25,7 @@ Gallery
 </h2> <p class="w-full text-center text-gray-600 lg:text-lg font-normal md:leading-8" data-astro-cid-sahthylw>
 Discover the journey and achievements of Dr. Chima Matthew Amadi, a
 					dedicated politician, through this gallery.
-</p> </div> </div> <section class="gallery-section pt-8 pb-12" data-astro-cid-sahthylw> <div id="gallery-grid" class="gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3" data-astro-cid-sahthylw> ${gallery$1.data.map((item, index) => renderTemplate`<div${addAttribute(`gallery-item relative overflow-hidden h-64 rounded-lg ${index >= 9 ? "hidden" : ""}`, "class")} data-aos="fade-up"${addAttribute(index * 100, "data-aos-delay")} data-astro-cid-sahthylw> <div class="image-wrapper relative h-full w-full overflow-hidden group cursor-pointer" data-aos="fade-up" data-astro-cid-sahthylw> ${renderComponent($$result2, "PortableText", $$PortableText, { "portableText": item?.image, "class": "gallery-image !block w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110", "imageOpts": {
+</p> </div> </div> <section class="gallery-section pt-8 pb-12" data-astro-cid-sahthylw> <div id="gallery-grid" class="gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3" data-astro-cid-sahthylw> ${gallery$1.data.map((item, index) => renderTemplate`<div${addAttribute(`gallery-item relative overflow-hidden h-64 rounded-lg ${index >= 9 ? "hidden" : ""}`, "class")} data-aos="fade-up"${addAttribute(index * 100, "data-aos-delay")} data-astro-cid-sahthylw> <div class="image-wrapper relative h-full w-full overflow-hidden group cursor-pointer" data-astro-cid-sahthylw> ${renderComponent($$result2, "PortableText", $$PortableText, { "portableText": item?.image, "style": "max-height: 100%; max-width: 100%; border: 1px solid red; aspect-ratio: 3/2;", "class": "gallery-image !block w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110", "imageOpts": {
     alt: item?.title || `Dr. Chima Matthew Amadi Gallery Image ${index}`
   }, "data-astro-cid-sahthylw": true })} ${item?.title && renderTemplate`<div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end" data-astro-cid-sahthylw> <p class="text-white p-4 text-sm" data-astro-cid-sahthylw>${item.title}</p> </div>`} </div> </div>`)} </div> <div class="flex justify-center mt-8" data-astro-cid-sahthylw> <button id="view-more-btn" class="text-red-800 font-semibold hover:underline hover:text-red-800/80" data-astro-cid-sahthylw> ${gallery$1.data.length > 9 ? "[See more images]" : ""} </button> </div> <!-- Lightbox --> <div id="lightbox" class="fixed inset-0 z-50 hidden bg-black bg-opacity-90 items-center justify-center" data-astro-cid-sahthylw> <button id="close" class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 focus:outline-none" data-astro-cid-sahthylw>
 &times;
