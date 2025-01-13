@@ -1,0 +1,139 @@
+---
+import { Container } from '@/components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+import Heading from '@/components/sections/heros/Heading.astro';
+import type { Articles } from '@/sanity/sanity.types';
+import { articles } from '@/sanity/lib/sanity-utils';
+import PortableText from '@/components/PortableText.astro';
+
+const postId = Astro.params.id;
+let articleContents: { data: Articles[] } = { data: [] };
+try {
+	articleContents = await articles();
+} catch (error) {
+	console.error('error', error);
+}
+
+let posts = articleContents?.data?.[0]?.articles ?? null;
+const filteredPost = posts?.find(post => post?._key === postId);
+
+const getMetaDescription = (content: any) => {
+	if (!content) return '';
+	const plainText = content
+		.filter((block: any) => block._type === 'block')
+		.map((block: { _type: string; children: { text: string }[] }) =>
+			block.children?.map(child => child.text).join(' ')
+		)
+		.join(' ');
+	return plainText.slice(0, 155) + '...';
+};
+
+const seo = {
+	title: `Dr. Chima Amadi | ${filteredPost?.title} `,
+	description:
+		getMetaDescription(filteredPost?.content) ||
+		`Read about ${filteredPost?.title} by Dr. Chima Amadi`,
+	openGraph: {
+		title: filteredPost?.title,
+		description: getMetaDescription(filteredPost?.content),
+		type: 'article',
+		image: filteredPost?.image || '/images/home/chima-amadi-2.webp',
+		publishedTime: filteredPost?.createdAt,
+		author: 'Dr. Chima Amadi',
+		article: {
+			section: filteredPost?.title || 'Articles',
+			tags: [
+				'Dr. Chima Amadi',
+				'Articles',
+				'Dr. Chima Matthew Amadi',
+				'Mazi Gburugburu',
+				'Chima Amadi',
+			],
+		},
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: filteredPost?.title,
+		description: getMetaDescription(filteredPost?.content),
+		image: filteredPost?.image || '/images/home/chima-amadi-2.webp',
+	},
+	structuredData: {
+		'@context': 'https://schema.org',
+		'@type': 'Article',
+		headline: filteredPost?.title,
+		image: filteredPost?.image || '/images/home/chima-amadi-2.webp',
+		author: {
+			'@type': 'Person',
+			name: 'Dr. Chima Amadi',
+		},
+		publisher: {
+			'@type': 'Person',
+			name: 'Dr. Chima Amadi',
+		},
+		datePublished: filteredPost?.createdAt,
+		description: getMetaDescription(filteredPost?.content),
+	},
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<article class="pb-10 lg:px-6">
+			<div class="blog-posts-list__section px-4">
+				<Heading>
+					<h2
+						slot="headingText"
+						class="text-lg md:text-2xl font-medium tracking-normal md:tracking-[1px] leading-5"
+					>
+						{filteredPost?.title}
+					</h2>
+				</Heading>
+
+				<div class="article-content">
+					<PortableText portableText={filteredPost?.content} />
+				</div>
+				<div>
+					<PortableText portableText={filteredPost?.image} />
+				</div>
+			</div>
+			<div class="px-4 mt-8">
+				{
+					filteredPost?.createdAt && (
+						<div class="flex items-center gap-2 mb-4 text-xs">
+							<span class="font-medium">Date published:</span>
+							<time
+								datetime={filteredPost.createdAt}
+								class="text-gray-600 block"
+							>
+								{new Date(filteredPost.createdAt).toLocaleDateString()}
+							</time>
+						</div>
+					)
+				}
+				<p class="text-xs">
+					<span class="font-medium">Keywords:</span>
+					<span class="text-gray-700">
+						Dr. Chima Amadi, Articles, Dr. Chima Matthew Amadi, Mazi Gburugburu,
+						Chima Amadi</span
+					>
+				</p>
+			</div>
+		</article>
+	</Container>
+</Layout>
+
+<style>
+	.article-content :global(img) {
+		width: 100%;
+		height: 480px;
+		margin-block: 16px;
+		object-fit: contain;
+	}
+	.article-content :global(figure) {
+		width: 340px;
+		margin: 2rem 0;
+	}
+	.blog-posts-list__section {
+		margin: var(--section-margin) auto;
+	}
+</style>

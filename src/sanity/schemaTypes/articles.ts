@@ -27,11 +27,27 @@ export default {
 							type: 'string',
 						},
 						{
+							name: 'content',
+							title: 'Content',
+							type: 'blockContent',
+						},
+						{
 							name: 'image',
 							title: 'Image',
 							type: 'image',
 							options: {
 								hotspot: true,
+							},
+						},
+						{
+							name: 'createdAt',
+							title: 'Created At',
+							type: 'datetime',
+							options: {
+								dateFormat: 'YYYY-MM-DD',
+								timeFormat: 'HH:mm',
+								timeStep: 15,
+								calendarTodayLabel: 'Today',
 							},
 						},
 					],
