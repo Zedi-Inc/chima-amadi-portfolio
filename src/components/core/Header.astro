@@ -41,8 +41,9 @@ const currentPath = Astro.url.pathname;
 
 <header
 	id="odysseyNavHeader"
-	class={`${rightMenu ? 'header--right' : ``.trim()} px-4 lg:px-12 py-4`}
+	class={`${rightMenu ? 'header--right' : ``.trim()} flex justify-center px-4 lg:px-8 py-4 border-b border-gray-200`}
 >
+<div class="w-full flex justify-center items-center max-w-[1280px] mx-auto">
 	<div class="w-full flex justify-between items-center">
 		<div class="header-logo-menu__container">
 			<button id="menuButton" title="Open Main Menu">
@@ -87,6 +88,7 @@ const currentPath = Astro.url.pathname;
 			<slot name="action-item" />
 		</div>
 	</div>
+</div>
 </header>
 
 <style>
@@ -97,10 +99,7 @@ const currentPath = Astro.url.pathname;
 		justify-content: space-between;
 		align-items: center;
 	}
-	header.header--right {
-		display: grid;
-		grid-template-columns: 1fr auto auto;
-	}
+
 	.header-logo__link {
 		width: fit-content;
 		color: inherit;

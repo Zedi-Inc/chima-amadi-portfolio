@@ -2,13 +2,13 @@
 import { SkipLink } from '@/components/odyssey-theme';
 import BaseHead from '../components/head/BaseHead.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
+import LoadingScreen from '@/components/LoadingScreen.astro';
 
 export interface Props {
 	seo?: BaseHeadProps;
 }
 
 const { seo } = Astro.props;
-
 ---
 
 <html lang="en">
@@ -16,6 +16,7 @@ const { seo } = Astro.props;
 		<BaseHead {...seo} />
 	</head>
 	<body>
+		<LoadingScreen />
 		<SkipLink />
 		<slot name="announcement-bar" />
 		<slot name="header" />

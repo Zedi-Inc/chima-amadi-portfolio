@@ -68,6 +68,26 @@ export type Geopoint = {
 	alt?: number;
 };
 
+export type Gallery = {
+	_id: string;
+	_type: 'gallery';
+	_createdAt: string;
+	_updatedAt: string;
+	_rev: string;
+	title?: string;
+	image?: {
+		asset?: {
+			_ref: string;
+			_type: 'reference';
+			_weak?: boolean;
+			[internalGroqTypeReferenceTo]?: 'sanity.imageAsset';
+		};
+		hotspot?: SanityImageHotspot;
+		crop?: SanityImageCrop;
+		_type: 'image';
+	};
+};
+
 export type Articles = {
 	_id: string;
 	_type: 'articles';
@@ -424,6 +444,7 @@ export type AllSanitySchemaTypes =
 	| SanityImageDimensions
 	| SanityFileAsset
 	| Geopoint
+	| Gallery
 	| Articles
 	| About
 	| Post
