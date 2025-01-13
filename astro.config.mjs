@@ -15,7 +15,7 @@ const { PUBLIC_SANITY_STUDIO_PROJECT_ID, PUBLIC_SANITY_STUDIO_DATASET } =
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://odyssey-theme.sapling.supply/',
+	site: 'https://chimaamadi.cv',
 	sitemap: true,
 
 	integrations: [
