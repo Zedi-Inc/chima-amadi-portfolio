@@ -14,9 +14,9 @@ const { posts = [] } = Astro.props as BlogPostsListProps;
 	{
 		posts.map(post => (
 			<li class="blog-post__preview" data-aos="fade-up">
-				<a href={post.link} target="_blank">
+				<a href={post?.link ? post?.link : `/blog/${post?._key}`}>
 					<span class="h-fit md:h-[350px] bg-slate-500/30 overflow-hidden flex w-full justify-center items-center backdrop-blur-md relative">
-						<PortableText portableText={post.image} />
+						<PortableText portableText={post.image} alt="Dr. Chima" />
 					</span>
 					<p class="text-xs font-medium">{post.excerpt}</p>
 				</a>
