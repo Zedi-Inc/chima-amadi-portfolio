@@ -1,7 +1,7 @@
 import '../chunks/page-ssr_CyZe_LUJ.mjs';
 import { a as createComponent, r as renderTemplate, b as renderComponent, o as renderScript, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_a_9r0Ufn.mjs';
 import 'kleur/colors';
-import { d as $$PortableText, c as $$Page } from '../chunks/Page_Bg3FJYXk.mjs';
+import { d as $$PortableText, c as $$Page } from '../chunks/Page_CRe-USFk.mjs';
 import { g as gallery } from '../chunks/sanity-utils_QeMI58GM.mjs';
 import { $ as $$AOSInit } from '../chunks/AOSInit_D939KJTF.mjs';
 /* empty css                                   */

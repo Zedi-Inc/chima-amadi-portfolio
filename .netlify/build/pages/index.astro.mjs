@@ -1,9 +1,9 @@
 import '../chunks/page-ssr_CyZe_LUJ.mjs';
 import { a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_a_9r0Ufn.mjs';
 import 'kleur/colors';
-import { k as $$Socials, $ as $$Container, f as $$BlogPostsList, c as $$Page } from '../chunks/Page_Bg3FJYXk.mjs';
+import { k as $$Socials, $ as $$Container, f as $$BlogPostsList, c as $$Page } from '../chunks/Page_CRe-USFk.mjs';
 import { $ as $$Heading } from '../chunks/Heading_dsUdEwPs.mjs';
-import { $ as $$SectionTop } from '../chunks/SectionTop_zq_BWcrt.mjs';
+import { $ as $$SectionTop } from '../chunks/SectionTop_BiNbbuwE.mjs';
 /* empty css                                 */
 import { b as articles } from '../chunks/sanity-utils_QeMI58GM.mjs';
 import { $ as $$AOSInit } from '../chunks/AOSInit_D939KJTF.mjs';
@@ -11,7 +11,7 @@ export { renderers } from '../renderers.mjs';
 
 const $$HomeHeroSection = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Container", $$Container, { "data-astro-cid-ulkickqi": true }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="w-full flex justify-center max-w-[1280px]" data-astro-cid-ulkickqi> <div class="hero-section__section flex flex-col-reverse md:flex-row md:gap-[120px] px-4 lg:px-12 mt-8 w-full" data-astro-cid-ulkickqi> <div class="hero-section__text" data-aos="fade-right" data-astro-cid-ulkickqi> <h1 class="text-[44px] text-red-800 font-semibold text-center md:text-right md:text-[50px] lg:text-5xl -tracking-[4px] whitespace-nowrap" data-astro-cid-ulkickqi>
-Dr. Chima Amadi
+Dr. Chima Matthew Amadi
 </h1> <div class="flex justify-center md:justify-end" data-astro-cid-ulkickqi> <p class="text-sm md:text-base text-center md:text-right max-w-[80%]" data-astro-cid-ulkickqi>
 Executive Director of the Centre for Transparency Advocacy (CTA)
 </p> </div> ${renderComponent($$result2, "Socials", $$Socials, { "data-astro-cid-ulkickqi": true })} </div> <div class="hero-section__image" data-aos="fade-left" data-astro-cid-ulkickqi> <picture data-astro-cid-ulkickqi> <img src="/assets/images/home/mazi-15.webp" alt="Dr. Chima Matthew Amadi Mazi Gburugburu" id="home-hero-image" class="h-full" loading="lazy" data-astro-cid-ulkickqi> </picture> </div> </div> </section> ` })} `;
@@ -19,8 +19,8 @@ Executive Director of the Centre for Transparency Advocacy (CTA)
 
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const seo = {
-    title: "Dr. Chima Amadi",
-    description: "Dr. Chima Amadi is a distinguished Nigerian scholar, researcher, and advocate for good governance who leads the Centre for Transparency Advocacy. Known for his contributions to Political Science and Development Studies, he champions social causes through the Jude and Juliana Amadi Foundation."
+    title: "Dr. Chima Matthew Amadi - Mazi Ggbugburu",
+    description: "Dr. Chima Amadi is a distinguished Nigerian scholar, researcher, and advocate for good governance who leads the Centre for Transparency Advocacy."
   };
   let articleContents = { data: [] };
   try {
