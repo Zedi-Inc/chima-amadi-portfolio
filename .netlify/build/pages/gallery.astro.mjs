@@ -1,10 +1,9 @@
-import '../chunks/page-ssr_Do-0TkbW.mjs';
+import '../chunks/page-ssr_CyZe_LUJ.mjs';
 import { a as createComponent, r as renderTemplate, b as renderComponent, o as renderScript, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_a_9r0Ufn.mjs';
 import 'kleur/colors';
-import { $ as $$Page } from '../chunks/Page_D_RB3iaU.mjs';
-import { g as gallery } from '../chunks/sanity-utils_Db0sd0oL.mjs';
+import { d as $$PortableText, c as $$Page } from '../chunks/Page_Bg3FJYXk.mjs';
+import { g as gallery } from '../chunks/sanity-utils_QeMI58GM.mjs';
 import { $ as $$AOSInit } from '../chunks/AOSInit_D939KJTF.mjs';
-import { c as $$PortableText } from '../chunks/Logo_BxMPVF_t.mjs';
 /* empty css                                   */
 export { renderers } from '../renderers.mjs';
 
@@ -29,7 +28,7 @@ Discover the journey and achievements of Dr. Chima Matthew Amadi, a
     alt: item?.title || `Dr. Chima Matthew Amadi Gallery Image ${index}`
   }, "data-astro-cid-sahthylw": true })} ${item?.title && renderTemplate`<div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end" data-astro-cid-sahthylw> <p class="text-white p-4 text-sm" data-astro-cid-sahthylw>${item.title}</p> </div>`} </div> </div>`)} </div> <div class="flex justify-center mt-8" data-astro-cid-sahthylw> <button id="view-more-btn" class="text-red-800 font-semibold hover:underline hover:text-red-800/80" data-astro-cid-sahthylw> ${gallery$1.data.length > 9 ? "[See more images]" : ""} </button> </div> <!-- Lightbox --> <div id="lightbox" class="fixed inset-0 z-50 hidden bg-black bg-opacity-90 items-center justify-center" data-astro-cid-sahthylw> <button id="close" class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 focus:outline-none" data-astro-cid-sahthylw>
 &times;
-</button> <img id="lightbox-image" class="max-w-[90vw] max-h-[90vh] object-contain" src="" alt="Dr. Chima Matthew Amadi, Mazi Gburugburu" data-astro-cid-sahthylw> </div> </section> </section> ` })} ${!gallery$1 && renderTemplate`<div class="loading-state flex items-center justify-center py-20" data-astro-cid-sahthylw> <p class="text-gray-600" data-astro-cid-sahthylw>Loading images...</p> </div>`}  ${renderScript($$result, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/gallery.astro?astro&type=script&index=0&lang.ts")}`;
+</button> <img id="lightbox-image" class="max-w-[90vw] max-h-[90vh] object-contain" src="" alt="Dr. Chima Matthew Amadi, Mazi Gburugburu" loading="lazy" data-astro-cid-sahthylw> </div> </section> </section> ` })} ${!gallery$1 && renderTemplate`<div class="loading-state flex items-center justify-center py-20" data-astro-cid-sahthylw> <p class="text-gray-600" data-astro-cid-sahthylw>Loading images...</p> </div>`}  ${renderScript($$result, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/gallery.astro?astro&type=script&index=0&lang.ts")}`;
 }, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/gallery.astro", void 0);
 
 const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/gallery.astro";

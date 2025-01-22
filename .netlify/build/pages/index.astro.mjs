@@ -1,12 +1,11 @@
-import '../chunks/page-ssr_Do-0TkbW.mjs';
+import '../chunks/page-ssr_CyZe_LUJ.mjs';
 import { a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_a_9r0Ufn.mjs';
 import 'kleur/colors';
-import { s as $$Socials, $ as $$Container, e as $$BlogPostsList } from '../chunks/Logo_BxMPVF_t.mjs';
+import { k as $$Socials, $ as $$Container, f as $$BlogPostsList, c as $$Page } from '../chunks/Page_Bg3FJYXk.mjs';
 import { $ as $$Heading } from '../chunks/Heading_dsUdEwPs.mjs';
-import { $ as $$SectionTop } from '../chunks/SectionTop_CUzzyC-I.mjs';
+import { $ as $$SectionTop } from '../chunks/SectionTop_zq_BWcrt.mjs';
 /* empty css                                 */
-import { $ as $$Page } from '../chunks/Page_D_RB3iaU.mjs';
-import { b as articles } from '../chunks/sanity-utils_Db0sd0oL.mjs';
+import { b as articles } from '../chunks/sanity-utils_QeMI58GM.mjs';
 import { $ as $$AOSInit } from '../chunks/AOSInit_D939KJTF.mjs';
 export { renderers } from '../renderers.mjs';
 
@@ -15,13 +14,13 @@ const $$HomeHeroSection = createComponent(($$result, $$props, $$slots) => {
 Dr. Chima Amadi
 </h1> <div class="flex justify-center md:justify-end" data-astro-cid-ulkickqi> <p class="text-sm md:text-base text-center md:text-right max-w-[80%]" data-astro-cid-ulkickqi>
 Executive Director of the Centre for Transparency Advocacy (CTA)
-</p> </div> ${renderComponent($$result2, "Socials", $$Socials, { "data-astro-cid-ulkickqi": true })} </div> <div class="hero-section__image" data-aos="fade-left" data-astro-cid-ulkickqi> <picture data-astro-cid-ulkickqi> <img src="/assets/images/home/mazi-15.webp" alt="Dr. Chima Matthew Amadi Mazi Gburugburu" id="home-hero-image" class="h-full" data-astro-cid-ulkickqi> </picture> </div> </div> </section> ` })} `;
+</p> </div> ${renderComponent($$result2, "Socials", $$Socials, { "data-astro-cid-ulkickqi": true })} </div> <div class="hero-section__image" data-aos="fade-left" data-astro-cid-ulkickqi> <picture data-astro-cid-ulkickqi> <img src="/assets/images/home/mazi-15.webp" alt="Dr. Chima Matthew Amadi Mazi Gburugburu" id="home-hero-image" class="h-full" loading="lazy" data-astro-cid-ulkickqi> </picture> </div> </div> </section> ` })} `;
 }, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/components/sections/heros/HomeHeroSection.astro", void 0);
 
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const seo = {
     title: "Dr. Chima Amadi",
-    description: "Dr. Chima Amadi is a renowned scholar, advocates for good governance, and entrepreneur."
+    description: "Dr. Chima Amadi is a distinguished Nigerian scholar, researcher, and advocate for good governance who leads the Centre for Transparency Advocacy. Known for his contributions to Political Science and Development Studies, he champions social causes through the Jude and Juliana Amadi Foundation."
   };
   let articleContents = { data: [] };
   try {
@@ -30,7 +29,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
     console.error("error", error);
   }
   const posts = articleContents?.data?.[0]?.articles ?? null;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Page, { "seo": seo, "data-astro-cid-j7pv25f6": true }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "AOSInit", $$AOSInit, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "HomeHeroSection", $$HomeHeroSection, { "data-astro-cid-j7pv25f6": true })} ${maybeRenderHead()}<section class="pb-10 lg:px-6 w-full mx-auto" data-astro-cid-j7pv25f6> ${renderComponent($$result2, "SectionTop", $$SectionTop, { "data-astro-cid-j7pv25f6": true }, { "image-container": ($$result3) => renderTemplate`<picture data-aos="fade-right" data-astro-cid-j7pv25f6> <img src="/assets/images/home/chima-amadi-2.webp" alt="Dr. Chima Amadi's image" id="home-hero-image" data-astro-cid-j7pv25f6> </picture>`, "text-container": ($$result3) => renderTemplate`<div data-aos="fade-right" data-astro-cid-j7pv25f6> ${renderComponent($$result3, "Heading", $$Heading, { "data-astro-cid-j7pv25f6": true }, { "headingText": ($$result4) => renderTemplate`<h2 class="text-lg md:text-2xl font-medium tracking-[1px]" data-astro-cid-j7pv25f6>
+  return renderTemplate`${renderComponent($$result, "Layout", $$Page, { "seo": seo, "data-astro-cid-j7pv25f6": true }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "AOSInit", $$AOSInit, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "HomeHeroSection", $$HomeHeroSection, { "data-astro-cid-j7pv25f6": true })} ${maybeRenderHead()}<section class="pb-10 lg:px-6 w-full mx-auto" data-astro-cid-j7pv25f6> ${renderComponent($$result2, "SectionTop", $$SectionTop, { "data-astro-cid-j7pv25f6": true }, { "image-container": ($$result3) => renderTemplate`<picture data-aos="fade-right" data-astro-cid-j7pv25f6> <img src="/assets/images/home/chima-amadi-2.webp" alt="Dr. Chima Amadi's image" id="home-hero-image" loading="lazy" data-astro-cid-j7pv25f6> </picture>`, "text-container": ($$result3) => renderTemplate`<div data-aos="fade-right" data-astro-cid-j7pv25f6> ${renderComponent($$result3, "Heading", $$Heading, { "data-astro-cid-j7pv25f6": true }, { "headingText": ($$result4) => renderTemplate`<h2 class="text-lg md:text-2xl font-medium tracking-[1px]" data-astro-cid-j7pv25f6>
 About Dr. Chima Amadi
 </h2>` })} <div class="text-sm md:text-base" data-aos="fade-left" data-astro-cid-j7pv25f6> <p data-astro-cid-j7pv25f6>
 Dr. Chima Matthew Amadi, also called "Mazi Gburugburu," is a
