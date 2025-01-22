@@ -1,10 +1,10 @@
 import '../chunks/page-ssr_Do-0TkbW.mjs';
 import { a as createComponent, r as renderTemplate, b as renderComponent, o as renderScript, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_a_9r0Ufn.mjs';
 import 'kleur/colors';
-import { $ as $$Page } from '../chunks/Page_DYZhNt29.mjs';
+import { $ as $$Page } from '../chunks/Page_D_RB3iaU.mjs';
 import { g as gallery } from '../chunks/sanity-utils_Db0sd0oL.mjs';
 import { $ as $$AOSInit } from '../chunks/AOSInit_D939KJTF.mjs';
-import { c as $$PortableText } from '../chunks/Logo_B-gdB_MZ.mjs';
+import { c as $$PortableText } from '../chunks/Logo_BxMPVF_t.mjs';
 /* empty css                                   */
 export { renderers } from '../renderers.mjs';
 

@@ -1,8 +1,8 @@
 import '../chunks/page-ssr_Do-0TkbW.mjs';
 import { a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_a_9r0Ufn.mjs';
 import 'kleur/colors';
-import { $ as $$Container, e as $$BlogPostsList } from '../chunks/Logo_B-gdB_MZ.mjs';
-import { $ as $$Page } from '../chunks/Page_DYZhNt29.mjs';
+import { $ as $$Container, e as $$BlogPostsList } from '../chunks/Logo_BxMPVF_t.mjs';
+import { $ as $$Page } from '../chunks/Page_D_RB3iaU.mjs';
 import { $ as $$Heading } from '../chunks/Heading_dsUdEwPs.mjs';
 import { b as articles } from '../chunks/sanity-utils_Db0sd0oL.mjs';
 /* empty css                                 */

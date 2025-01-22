@@ -1,9 +1,9 @@
 import '../../chunks/page-ssr_Do-0TkbW.mjs';
 import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, d as addAttribute, g as renderSlot, F as Fragment } from '../../chunks/astro/server_a_9r0Ufn.mjs';
 import 'kleur/colors';
-import { $ as $$Container, j as $$AnnouncementBar, b as $$Button, k as $$Icon, l as $$CustomerQuoteSection, m as $$ThreeColumnTextSection, n as $$YouTubeEmbedSection, o as $$StickyTextImageSection, p as $$CtaCardSection } from '../../chunks/Logo_B-gdB_MZ.mjs';
+import { $ as $$Container, j as $$AnnouncementBar, b as $$Button, k as $$Icon, l as $$CustomerQuoteSection, m as $$ThreeColumnTextSection, n as $$YouTubeEmbedSection, o as $$StickyTextImageSection, p as $$CtaCardSection } from '../../chunks/Logo_BxMPVF_t.mjs';
 /* empty css                                        */
-import { $ as $$Page } from '../../chunks/Page_DYZhNt29.mjs';
+import { $ as $$Page } from '../../chunks/Page_D_RB3iaU.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Astro$1 = createAstro("https://chimaamadi.cv");
