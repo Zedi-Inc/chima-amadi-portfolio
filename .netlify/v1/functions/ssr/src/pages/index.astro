@@ -1,0 +1,115 @@
+---
+import { BlogPostsList } from '@/components/odyssey-theme';
+import Heading from '@/components/sections/heros/Heading.astro';
+import SectionTop from '@/components/sections/heros/SectionTop.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import Layout from '../layouts/Page.astro';
+import type { Articles } from '@/sanity/sanity.types';
+import { articles } from '@/sanity/lib/sanity-utils';
+import AOSInit from '@/components/AOSInit.astro';
+
+const seo = {
+	title: 'Dr. Chima Amadi',
+	description:
+		'Dr. Chima Amadi is a renowned scholar, advocates for good governance, and entrepreneur.',
+};
+
+let articleContents: { data: Articles[] } = { data: [] };
+
+try {
+	articleContents = await articles();
+} catch (error) {
+	console.error('error', error);
+}
+
+const posts = articleContents?.data?.[0]?.articles ?? null;
+---
+
+<Layout {seo}>
+	<AOSInit />
+	<HomeHeroSection />
+	<section class="pb-10 lg:px-6 w-full mx-auto">
+		<SectionTop>
+			<div slot="text-container" data-aos="fade-right">
+				<Heading>
+					<h2
+						slot="headingText"
+						class="text-lg md:text-2xl font-medium tracking-[1px]"
+					>
+						About Dr. Chima Amadi
+					</h2>
+				</Heading>
+				<div class="text-sm md:text-base" data-aos="fade-left">
+					<p>
+						Dr. Chima Matthew Amadi, also called "Mazi Gburugburu," is a
+						respected Nigerian scholar, researcher, advocate for good
+						governance, entrepreneur, and philanthropist who has made noteworthy
+						advancements in the fields of Political Science, Economics, and
+						Development Studies.
+					</p>
+					<p>
+						He is the chairman of Centre for Transparency Advocacy (CTA),
+						Julian-Matt Group, and founded the Jude and Juliana Amadi
+						Foundation.
+					</p>
+					<p>
+						In 2023, Amadi was awarded the Social Crusader of the Year by The
+						New Telegraph Newspapers.
+					</p>
+					<div class="mt-2">
+						<a
+							href="/about"
+							class="text-red-800 font-semibold hover:underline hover:text-red-800/80"
+							>[See more]</a
+						>
+					</div>
+				</div>
+			</div>
+			<picture slot="image-container" data-aos="fade-right">
+				<img
+					src="/assets/images/home/chima-amadi-2.webp"
+					alt="Dr. Chima Amadi's image"
+					id="home-hero-image"
+				/>
+			</picture>
+		</SectionTop>
+	</section>
+	<section class="pb-10 px-4 lg:px-12 mt-8 max-w-[1280px] mx-auto">
+		<Heading>
+			<h2
+				slot="headingText"
+				class="text-lg md:text-2xl font-medium tracking-[1px]"
+			>
+				Recent Articles
+			</h2>
+		</Heading>
+		<BlogPostsList posts={posts?.slice(0, 4)} />
+		<div class="mt-2">
+			<a
+				href="/blog"
+				class="text-red-800 font-semibold hover:underline hover:text-red-800/80"
+			>
+				[See more articles]
+			</a>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	p {
+		margin-top: 4px;
+	}
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

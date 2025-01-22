@@ -1,0 +1,235 @@
+---
+import Layout from '../layouts/Page.astro';
+import type { Gallery } from '@/sanity/sanity.types';
+import { gallery as fetchGallery } from '@/sanity/lib/sanity-utils';
+import AOSInit from '@/components/AOSInit.astro';
+import PortableText from '@/components/PortableText.astro';
+
+const seo = {
+	title: 'Dr. Chima Matthew Amadi | Pictures gallery',
+	description:
+		'Dr. Chima Matthew Amadi is a renowned scholar, advocates for good governance, and entrepreneur.',
+};
+
+let galleryContents: { data: Gallery[] } = { data: [] };
+
+try {
+	galleryContents = await fetchGallery();
+} catch (error) {
+	console.error('error', error);
+}
+
+const gallery = galleryContents ?? null;
+---
+
+<Layout {seo}>
+	<AOSInit />
+	<section class="pt-8 pb-24 relative max-w-[1280px] mx-auto">
+		<div class="mx-auto max-w-7xl px-4 sm:px-5 lg:px-6">
+			<div class="mb-6 md:mb-16">
+				<h2
+					class="w-full text-center text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal pb-2.5"
+				>
+					Gallery
+				</h2>
+				<p
+					class="w-full text-center text-gray-600 lg:text-lg font-normal md:leading-8"
+				>
+					Discover the journey and achievements of Dr. Chima Matthew Amadi, a
+					dedicated politician, through this gallery.
+				</p>
+			</div>
+		</div>
+		<section class="gallery-section pt-8 pb-12">
+			<div
+				id="gallery-grid"
+				class="gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+			>
+				{
+					gallery.data.map((item, index) => (
+						<div
+							class={`gallery-item relative overflow-hidden h-64 rounded-lg ${index >= 9 ? 'hidden' : ''}`}
+							data-aos="fade-up"
+							data-aos-delay={index * 100}
+						>
+							<div class="image-wrapper relative h-full w-full overflow-hidden group cursor-pointer">
+								<PortableText
+									portableText={item?.image}
+									style="max-height: 100%; max-width: 100%; border: 1px solid red; aspect-ratio: 3/2;"
+									class="gallery-image !block w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+									imageOpts={{
+										alt:
+											item?.title ||
+											`Dr. Chima Matthew Amadi Gallery Image ${index}`,
+									}}
+								/>
+								{item?.title && (
+									<div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+										<p class="text-white p-4 text-sm">{item.title}</p>
+									</div>
+								)}
+							</div>
+						</div>
+					))
+				}
+			</div>
+			<div class="flex justify-center mt-8">
+				<button
+					id="view-more-btn"
+					class="text-red-800 font-semibold hover:underline hover:text-red-800/80"
+				>
+					{gallery.data.length > 9 ? '[See more images]' : ''}
+				</button>
+			</div>
+
+			<!-- Lightbox -->
+			<div
+				id="lightbox"
+				class="fixed inset-0 z-50 hidden bg-black bg-opacity-90 items-center justify-center"
+			>
+				<button
+					id="close"
+					class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 focus:outline-none"
+				>
+					&times;
+				</button>
+				<img
+					id="lightbox-image"
+					class="max-w-[90vw] max-h-[90vh] object-contain"
+					src=""
+					alt="Dr. Chima Matthew Amadi, Mazi Gburugburu"
+				/>
+			</div>
+		</section>
+	</section>
+</Layout>
+{
+	!gallery && (
+		<div class="loading-state flex items-center justify-center py-20">
+			<p class="text-gray-600">Loading images...</p>
+		</div>
+	)
+}
+
+<style>
+	.gallery {
+		@apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+		gap: 2rem;
+	}
+
+	.gallery-item {
+		@apply transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+	}
+
+	.image-wrapper :global(img) {
+		@apply w-full h-full object-cover transition-all duration-300;
+		aspect-ratio: 3/2;
+	}
+
+	.animate-fade-in {
+		animation: fadeIn 0.5s ease-out forwards;
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.hidden {
+		display: none;
+	}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		const gallery = document.querySelector('.gallery');
+		const lightbox = document.getElementById('lightbox');
+		const lightboxImg = document.getElementById(
+			'lightbox-image'
+		) as HTMLImageElement;
+		const closeBtn = document.getElementById('close');
+		const viewMoreBtn = document.getElementById('view-more-btn');
+		const hiddenItems = document.querySelectorAll('.gallery-item.hidden');
+
+		// Function to open lightbox
+		function openLightbox(imgSrc: string) {
+			if (lightbox && lightboxImg) {
+				lightboxImg.src = imgSrc;
+				lightbox.classList.remove('hidden');
+				lightbox.style.display = 'flex';
+				document.body.style.overflow = 'hidden';
+			}
+		}
+
+		// Function to close lightbox
+		function closeLightbox() {
+			if (lightbox) {
+				lightbox.style.display = 'none';
+				document.body.style.overflow = 'auto';
+			}
+		}
+
+		// Add click event to gallery images
+		if (gallery) {
+			gallery.addEventListener('click', e => {
+				const target = e.target as HTMLElement;
+				const galleryItem = target.closest('.gallery-item');
+				if (galleryItem) {
+					const img = galleryItem.querySelector('img');
+					if (img && img.src) {
+						openLightbox(img.src);
+					}
+				}
+			});
+		}
+
+		// Close lightbox when clicking close button
+		if (closeBtn) {
+			closeBtn.addEventListener('click', closeLightbox);
+		}
+
+		// Close lightbox when clicking outside the image
+		if (lightbox) {
+			lightbox.addEventListener('click', e => {
+				if (e.target === lightbox) {
+					closeLightbox();
+				}
+			});
+		}
+
+		// Close lightbox with Escape key
+		document.addEventListener('keydown', e => {
+			if (e.key === 'Escape') {
+				closeLightbox();
+			}
+		});
+
+		// View More functionality
+		if (viewMoreBtn) {
+			viewMoreBtn.addEventListener('click', () => {
+				hiddenItems.forEach((item, index) => {
+					setTimeout(() => {
+						item.classList.remove('hidden');
+						item.classList.add('animate-fade-in');
+					}, index * 100);
+				});
+				viewMoreBtn.style.display = 'none';
+			});
+		}
+
+		// Preload images for smoother lightbox experience
+		window.addEventListener('load', () => {
+			const images = document.querySelectorAll('.gallery-image img');
+			images.forEach(img => {
+				const preloadImg = new Image();
+				preloadImg.src = (img as HTMLImageElement).src;
+			});
+		});
+	});
+</script>

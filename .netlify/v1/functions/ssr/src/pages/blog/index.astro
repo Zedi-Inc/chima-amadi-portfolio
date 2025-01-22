@@ -1,0 +1,68 @@
+---
+import { Container, BlogPostsList } from '@/components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+import Heading from '@/components/sections/heros/Heading.astro';
+import type { Articles } from '@/sanity/sanity.types';
+import { articles } from '@/sanity/lib/sanity-utils';
+
+let articleContents: { data: Articles[] } = { data: [] };
+
+try {
+	articleContents = await articles();
+} catch (error) {
+	console.error('error', error);
+}
+
+const posts = articleContents?.data?.[0]?.articles ?? null;
+
+const seo = {
+	title: 'Dr. Chima Amadi',
+	description: 'Articles about Dr. Chima Amadi',
+	openGraph: {
+		title: 'Dr. Chima Amadi | Articles',
+		description: 'Articles about Dr. Chima Amadi',
+		image: '/images/home/chima-amadi-2.webp',
+		author: 'Dr. Chima Amadi',
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: 'Dr. Chima Amadi',
+		description: 'Articles about Dr. Chima Amadi',
+		image: '/images/home/chima-amadi-2.webp',
+	},
+	structuredData: {
+		'@context': 'https://schema.org',
+		'@type': 'Article',
+		headline: 'Articles about Dr. Chima Amadi',
+		image: '/images/home/chima-amadi-2.webp',
+		author: {
+			'@type': 'Person',
+			name: 'Dr. Chima Amadi',
+		},
+	},
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<section class="pb-10 lg:px-6">
+			<div class="blog-posts-list__section px-4">
+				<Heading>
+					<h2
+						slot="headingText"
+						class="text-lg md:text-2xl font-medium tracking-[1px]"
+					>
+						Articles
+					</h2>
+				</Heading>
+				<BlogPostsList posts={posts} />
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.blog-posts-list__section {
+		margin: var(--section-margin) auto;
+	}
+</style>

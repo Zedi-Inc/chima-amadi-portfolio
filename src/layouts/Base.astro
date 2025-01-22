@@ -8,6 +8,20 @@ export interface Props {
 	seo?: BaseHeadProps;
 }
 
+// Define gtag function type
+type GtagFunction = {
+	(command: 'js', date: Date): void;
+	(command: 'config', targetId: string): void;
+};
+
+// Declare global window properties
+declare global {
+	interface Window {
+		dataLayer: any[];
+		gtag: (...args: any[]) => void;
+	}
+}
+
 const { seo } = Astro.props;
 ---
 
@@ -15,6 +29,25 @@ const { seo } = Astro.props;
 	<head>
 		<BaseHead {...seo} />
 		<meta charset="UTF-8" />
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-BE2CP1HKXB"
+		></script>
+		<script define:vars={{ trackingId: 'G-BE2CP1HKXB' }}>
+			// Initialize dataLayer
+			window.dataLayer = window.dataLayer || [];
+
+			// Define gtag function
+			function gtag() {
+				window.dataLayer.push(arguments);
+			}
+
+			// Add gtag to window
+			window.gtag = gtag;
+
+			// Initialize Google Analytics
+			window.gtag('js', new Date());
+			window.gtag('config', trackingId);
+		</script>
 	</head>
 	<body>
 		<LoadingScreen />
