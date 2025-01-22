@@ -1,7 +1,7 @@
 import '../chunks/page-ssr_CyZe_LUJ.mjs';
 import { a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_a_9r0Ufn.mjs';
 import 'kleur/colors';
-import { $ as $$Container, f as $$BlogPostsList, c as $$Page } from '../chunks/Page_Bg3FJYXk.mjs';
+import { $ as $$Container, f as $$BlogPostsList, c as $$Page } from '../chunks/Page_CRe-USFk.mjs';
 import { $ as $$Heading } from '../chunks/Heading_dsUdEwPs.mjs';
 import { b as articles } from '../chunks/sanity-utils_QeMI58GM.mjs';
 /* empty css                                 */
@@ -16,18 +16,18 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   }
   const posts = articleContents?.data?.[0]?.articles ?? null;
   const seo = {
-    title: "Dr. Chima Amadi",
+    title: "Dr. Chima Matthew Amadi - Mazi Ggbugburu",
     description: "Articles about Dr. Chima Amadi",
     openGraph: {
-      title: "Dr. Chima Amadi | Articles",
-      description: "Articles about Dr. Chima Amadi",
+      title: "Dr. Chima Matthew Amadi | Articles",
+      description: "Articles about Dr. Chima Amadi - Mazi Ggbugburu",
       image: "/images/home/chima-amadi-2.webp",
       author: "Dr. Chima Amadi"
     },
     twitter: {
       card: "summary_large_image",
-      title: "Dr. Chima Amadi",
-      description: "Articles about Dr. Chima Amadi",
+      title: "Dr. Chima Matthew Amadi",
+      description: "Articles about Dr. Chima Amadi - Mazi Ggbugburu",
       image: "/images/home/chima-amadi-2.webp"
     },
     structuredData: {

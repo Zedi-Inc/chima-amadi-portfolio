@@ -8,6 +8,7 @@ Allow: /sitemap.xml
 
 # Protect sensitive areas
 Disallow: /admin/
+Disallow: /theme/
 
 # Crawl delays to prevent server overload
 Crawl-delay: 10

@@ -1,7 +1,7 @@
 import '../../chunks/page-ssr_CyZe_LUJ.mjs';
 import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, F as Fragment } from '../../chunks/astro/server_a_9r0Ufn.mjs';
 import 'kleur/colors';
-import { $ as $$Container, a as $$TextCardSection, b as $$Button, g as $$Icon, c as $$Page } from '../../chunks/Page_Bg3FJYXk.mjs';
+import { $ as $$Container, a as $$TextCardSection, b as $$Button, g as $$Icon, c as $$Page } from '../../chunks/Page_CRe-USFk.mjs';
 /* empty css                                          */
 export { renderers } from '../../renderers.mjs';
 
