@@ -11,7 +11,7 @@ export { renderers } from '../renderers.mjs';
 
 const $$HomeHeroSection = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Container", $$Container, { "data-astro-cid-ulkickqi": true }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="w-full flex justify-center max-w-[1280px]" data-astro-cid-ulkickqi> <div class="hero-section__section flex flex-col-reverse md:flex-row md:gap-[120px] px-4 lg:px-12 mt-8 w-full" data-astro-cid-ulkickqi> <div class="hero-section__text" data-aos="fade-right" data-astro-cid-ulkickqi> <h1 class="text-[44px] text-red-800 font-semibold text-center md:text-right md:text-[50px] lg:text-5xl -tracking-[4px] whitespace-nowrap" data-astro-cid-ulkickqi>
-Dr. Chima Matthew Amadi
+Dr. Chima Amadi
 </h1> <div class="flex justify-center md:justify-end" data-astro-cid-ulkickqi> <p class="text-sm md:text-base text-center md:text-right max-w-[80%]" data-astro-cid-ulkickqi>
 Executive Director of the Centre for Transparency Advocacy (CTA)
 </p> </div> ${renderComponent($$result2, "Socials", $$Socials, { "data-astro-cid-ulkickqi": true })} </div> <div class="hero-section__image" data-aos="fade-left" data-astro-cid-ulkickqi> <picture data-astro-cid-ulkickqi> <img src="/assets/images/home/mazi-15.webp" alt="Dr. Chima Matthew Amadi Mazi Gburugburu" id="home-hero-image" class="h-full" loading="lazy" data-astro-cid-ulkickqi> </picture> </div> </div> </section> ` })} `;
