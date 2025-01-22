@@ -1,10 +1,10 @@
-import '../../chunks/page-ssr_CMqITo4_.mjs';
-import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, d as addAttribute } from '../../chunks/astro/server_C-Sf_0IX.mjs';
+import '../../chunks/page-ssr_Do-0TkbW.mjs';
+import { c as createAstro, a as createComponent, r as renderTemplate, b as renderComponent, m as maybeRenderHead, d as addAttribute } from '../../chunks/astro/server_a_9r0Ufn.mjs';
 import 'kleur/colors';
-import { $ as $$Container, c as $$PortableText } from '../../chunks/Logo_BoHxFp4f.mjs';
-import { $ as $$Page } from '../../chunks/Page_y_a9vCOe.mjs';
-import { $ as $$Heading } from '../../chunks/Heading_BIpVdQ_3.mjs';
-import { b as articles } from '../../chunks/sanity-utils_CIA4ddue.mjs';
+import { $ as $$Container, c as $$PortableText } from '../../chunks/Logo_B-gdB_MZ.mjs';
+import { $ as $$Page } from '../../chunks/Page_DYZhNt29.mjs';
+import { $ as $$Heading } from '../../chunks/Heading_dsUdEwPs.mjs';
+import { b as articles } from '../../chunks/sanity-utils_Db0sd0oL.mjs';
 /* empty css                                   */
 export { renderers } from '../../renderers.mjs';
 
@@ -75,9 +75,9 @@ const $$id = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Layout", $$Page, { "seo": seo, "data-astro-cid-gsbvazvt": true }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Container", $$Container, { "data-astro-cid-gsbvazvt": true }, { "default": ($$result3) => renderTemplate` ${maybeRenderHead()}<article class="pb-10 lg:px-6" data-astro-cid-gsbvazvt> <div class="blog-posts-list__section px-4" data-astro-cid-gsbvazvt> ${renderComponent($$result3, "Heading", $$Heading, { "data-astro-cid-gsbvazvt": true }, { "headingText": ($$result4) => renderTemplate`<h2 class="text-lg md:text-2xl font-medium tracking-normal md:tracking-[1px] leading-5" data-astro-cid-gsbvazvt> ${filteredPost?.title} </h2>` })} <div class="article-content" data-astro-cid-gsbvazvt> ${renderComponent($$result3, "PortableText", $$PortableText, { "portableText": filteredPost?.content, "data-astro-cid-gsbvazvt": true })} </div> <div data-astro-cid-gsbvazvt> ${renderComponent($$result3, "PortableText", $$PortableText, { "portableText": filteredPost?.image, "data-astro-cid-gsbvazvt": true })} </div> </div> <div class="px-4 mt-8" data-astro-cid-gsbvazvt> ${filteredPost?.createdAt && renderTemplate`<div class="flex items-center gap-2 mb-4 text-xs" data-astro-cid-gsbvazvt> <span class="font-medium" data-astro-cid-gsbvazvt>Date published:</span> <time${addAttribute(filteredPost.createdAt, "datetime")} class="text-gray-600 block" data-astro-cid-gsbvazvt> ${new Date(filteredPost.createdAt).toLocaleDateString()} </time> </div>`} <p class="text-xs" data-astro-cid-gsbvazvt> <span class="font-medium" data-astro-cid-gsbvazvt>Keywords:</span> <span class="text-gray-700" data-astro-cid-gsbvazvt>
 Dr. Chima Amadi, Articles, Dr. Chima Matthew Amadi, Mazi Gburugburu,
 						Chima Amadi</span> </p> </div> </article> ` })} ` })} `;
-}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/blog/[id].astro", void 0);
+}, "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/blog/[id].astro", void 0);
 
-const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/chima-amadi-portfolio/src/pages/blog/[id].astro";
+const $$file = "C:/Users/Kingsley Akwa/Documents/web-dev/Jobs/ZEDI-PROJECTS/chima-amadi-portfolio/src/pages/blog/[id].astro";
 const $$url = "/blog/[id]";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
