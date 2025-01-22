@@ -11,7 +11,7 @@ import AOSInit from '@/components/AOSInit.astro';
 const seo = {
 	title: 'Dr. Chima Amadi',
 	description:
-		'Dr. Chima Amadi is a renowned scholar, advocates for good governance, and entrepreneur.',
+		'Dr. Chima Amadi is a distinguished Nigerian scholar, researcher, and advocate for good governance who leads the Centre for Transparency Advocacy. Known for his contributions to Political Science and Development Studies, he champions social causes through the Jude and Juliana Amadi Foundation.',
 };
 
 let articleContents: { data: Articles[] } = { data: [] };
@@ -70,6 +70,7 @@ const posts = articleContents?.data?.[0]?.articles ?? null;
 					src="/assets/images/home/chima-amadi-2.webp"
 					alt="Dr. Chima Amadi's image"
 					id="home-hero-image"
+					loading="lazy"
 				/>
 			</picture>
 		</SectionTop>

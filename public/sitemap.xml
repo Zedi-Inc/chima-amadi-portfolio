@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://chimaamadi.cv/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About Page -->
+    <url>
+        <loc>https://chimaamadi.cv/about</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Blog Section -->
+    <url>
+        <loc>https://chimaamadi.cv/blog</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Press Releases -->
+    <url>
+        <loc>https://chimaamadi.cv/wiki</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://chimaamadi.cv/gallery</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://chimaamadi.cv/blog/d31f24998cea</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://chimaamadi.cv/blog/88f932776782</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://chimaamadi.cv/blog/1ea55b9f7a4a</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://chimaamadi.cv/blog/9609fb51f1c3</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://chimaamadi.cv/blog/ca8b9150fb31</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://chimaamadi.cv/blog/b922c178fd4c</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://chimaamadi.cv/blog/d0e0dc03aa82</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://chimaamadi.cv/blog/4fdecda01bd2</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://chimaamadi.cv/blog/b0594259e15f</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://chimaamadi.cv/blog/ae986796336d</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.5</priority>
+    </url>
+</urlset>

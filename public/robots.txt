@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /gallery
+Allow: /blog
+Allow: /wiki
+Allow: /sitemap.xml
+
+# Protect sensitive areas
+Disallow: /admin/
+
+# Crawl delays to prevent server overload
+Crawl-delay: 10
+
+# XML Sitemap
+Sitemap: https://chimaamadi.cv/sitemap.xml
+
+# Block AI training bots (optional)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
