@@ -1,9 +1,9 @@
 import '../../chunks/page-ssr_Do-0TkbW.mjs';
 import { a as createComponent, r as renderTemplate, m as maybeRenderHead, b as renderComponent, c as createAstro } from '../../chunks/astro/server_a_9r0Ufn.mjs';
 import 'kleur/colors';
-import { g as $$FormInput, h as $$FormSelect, i as $$FormTextarea, b as $$Button, $ as $$Container } from '../../chunks/Logo_B-gdB_MZ.mjs';
+import { g as $$FormInput, h as $$FormSelect, i as $$FormTextarea, b as $$Button, $ as $$Container } from '../../chunks/Logo_BxMPVF_t.mjs';
 /* empty css                                      */
-import { $ as $$Page } from '../../chunks/Page_DYZhNt29.mjs';
+import { $ as $$Page } from '../../chunks/Page_D_RB3iaU.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$ContactForm = createComponent(($$result, $$props, $$slots) => {

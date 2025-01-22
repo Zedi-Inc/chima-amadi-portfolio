@@ -1,6 +1,6 @@
 import '../../../chunks/page-ssr_Do-0TkbW.mjs';
 import { _ as __astro_tag_component__, F as Fragment, f as createVNode } from '../../../chunks/astro/server_a_9r0Ufn.mjs';
-import { $ as $$Post } from '../../../chunks/Post_BhnqF5D_.mjs';
+import { $ as $$Post } from '../../../chunks/Post_TyN07YbK.mjs';
 import '@astrojs/internal-helpers/path';
 import { $ as $$Image } from '../../../chunks/_astro_assets_XWrrd_2c.mjs';
 import 'clsx';
