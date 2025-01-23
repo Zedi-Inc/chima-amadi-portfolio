@@ -1,4 +1,4 @@
-import '../../chunks/page-ssr_CyZe_LUJ.mjs';
+import '../../chunks/page-ssr_fmdHnOdU.mjs';
 import { a as createComponent, r as renderTemplate } from '../../chunks/astro/server_a_9r0Ufn.mjs';
 import 'kleur/colors';
 import 'clsx';
