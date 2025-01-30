@@ -27,7 +27,7 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- Press Releases -->
+    <!-- Wiki -->
     <url>
         <loc>https://chimaamadi.cv/wiki</loc>
         <lastmod>2025-01-21</lastmod>
@@ -35,7 +35,7 @@
         <priority>1.0</priority>
     </url>
 
-    <!-- Contact -->
+    <!-- Gallery -->
     <url>
         <loc>https://chimaamadi.cv/gallery</loc>
         <lastmod>2025-01-13</lastmod>
